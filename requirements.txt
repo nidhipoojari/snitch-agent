@@ -1,0 +1,9 @@
+agentdojo[transformers]==0.1.35   # contains AgentDojo benchmark v1.2.2
+openai
+transformers
+torch
+sentencepiece
+protobuf
+numpy
+pandas
+scikit-learn

@@ -1,0 +1,19 @@
+# model weights and training checkpoints (too large for GitHub)
+our_guard/model.safetensors
+our_guard/training_args.bin
+our_guard/checkpoints/
+*.safetensors
+*.bin
+*.zip
+
+# secrets
+.env
+*.env
+
+# python / OS
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store

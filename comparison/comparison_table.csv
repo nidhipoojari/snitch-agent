@@ -1,0 +1,5 @@
+detector,precision,recall,f1,false_alarm_rate,accuracy,attacks_caught,false_alarms
+ProtectAI DeBERTa v2,0.7052,0.4863,0.5756,0.1989,0.6454,177/364,74/372
+Prompt Guard 2 (86M),0.9868,0.206,0.3409,0.0027,0.606,75/364,1/372
+TF-IDF + logistic regression,0.8754,0.7335,0.7982,0.1022,0.8166,267/364,38/372
+Our guard (span-level),0.9544,0.978,0.9661,0.0457,0.966,356/364,17/372

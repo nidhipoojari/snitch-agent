@@ -1,0 +1,368 @@
+Mid-term Project Progress Report
+Team Snitch Agent: Nidhi Poojari, Krutika Raut  
+November 10, 2026
+
+1. Project Title- Did the Agent Tell You? A Detect-and-Disclose Defense Against Silent Prompt Injection in Tool-Using LLM Agents.
+
+2. Significance of the Topic  AI agents now read our emails and files and act on them, which makes them a target for indirect prompt injection [1]. Tests like AgentDojo [2] and InjecAgent [3] show these attacks often work.
+Defenses are usually judged on whether the attack worked and whether the task was still done, not on whether the agent told the user. A user who never hears about an attack can't report it or be careful next time. That is the gap we address: we measure how often agents tell users about attacks, and we build a guard that removes the attack and makes sure the user is warned.
+3. Problem Statement and Background    
+In indirect prompt injection, the attacker plants instructions in data the agent reads through a tool, such as an email or a calendar event. Existing detectors (ProtectAI DeBERTa v2 , Llama Prompt Guard 2) label a whole tool output as attack or safe, and in AgentDojo a flagged output is replaced with "<Data omitted because a prompt injection was detected>". The user's real data is lost, and nothing tells the agent to warn anyone.
+
+Problem. When an agent runs into a prompt injection during a normal task, how often does it actually tell the user? Do current defenses change that? And can we build one that makes the agent speak up without breaking the task? We sort every attacked run into one of four boxes:
+Agent behavior
+Told the user
+Stayed silent
+Resisted attack
+Ideal
+Silent defense
+Obeyed attacker
+Visible failure
+Silent compromise (worst case)
+
+
+
+How this ties to the course: our guard is a fine-tuned transformer (DeBERTa-v3) used for token classification, and the whole problem is an adversarial ML setting: an attacker crafts inputs to make a model misbehave, and we build and test a defense against it.
+
+
+4. Related Work 
+Attacks and benchmarks. AgentDojo [2], InjecAgent [3] and BIPIA [4] show that indirect prompt injection often succeeds. They measure whether the attack worked, and AgentDojo also measures whether the user’s task was still completed. None of them checks whether the user was told about the attack.
+Defenses. Prompt-based defenses mark untrusted text so the model treats it as data (spotlighting [5]). Detector-based defenses check tool outputs with a classifier, such as Prompt Guard 2 [6] or ProtectAI’s DeBERTa model [12]. These detectors judge the whole text, and when they flag it, the whole output is removed, including useful content. Training-based defenses retrain the model to ignore injected instructions (Meta SecAlign [7]). Later work shows that adaptive attacks can get past many of these defenses [8] and that current benchmarks may be too easy [9].
+Disclosure. Wang et al. [10] point out that users cannot tell from a polite reply that something went wrong, and recommend that agents speak up. However, they do not measure how often this happens or propose a way to make it happen.
+Gap. To our knowledge, no prior work measures whether agents tell users about attacks, and no defense is designed to make them do so. We also go beyond whole-text detectors: our guard finds the exact attack words, removes only those, and keeps the rest of the content.
+
+
+5. Overall Objectives / Goals   
+#
+Objective
+Measured by
+O1
+Measure how often agents disclose prompt injections to the user (RQ1).
+Disclosure Rate, Silent Defense / Silent Compromise Rate
+O2
+Test whether existing defenses (prompts, detectors) change disclosure (RQ2).
+Same metrics for B0-B6
+O3
+Build a span-level guard that removes only the attack, keeps the content, and tells the agent to warn the user (RQ3).
+Guard F1 / span-F1; attack success, utility, disclosure, false alarms
+O4
+Test “do this and don't tell the user” suppression attacks (RQ4).
+Change in Silent Compromise Rate
+
+
+Our hypotheses:
+  H1. When an agent resists an attack, it usually stays quiet about it (more than 50% of the time).
+  H2. Existing detectors rarely lead to a warning. Our guard should get more warnings without letting more attacks through.
+  H3. Removing only the attack keeps more tasks working than deleting the whole tool output.
+  H4. "Don't tell the user" attacks hurt the baselines more than our guard.
+  H5. Our guard raises a false alarm on 5% or fewer of clean tasks.
+
+6. Current Progress on the Goals   
+Goal / milestone
+Status
+Reference
+Span-labeled dataset and trained guard (DeBERTa-v3-base) 
+Done
+4,176 rows; test F1 0.966, span F1 0.973 (Table 3)
+Compare guard with existing detectors (same test set)
+Done
+Beats ProtectAI, Prompt Guard 2, TF-IDF; McNemar p < 1e-20 (Table 3)
+Guard alone on AgentDojo text (generalization)
+Done
+81.5% caught, 8.0% false alarms (Table 5)
+AgentDojo harness, guard plug-in and all 8 setups (B0-B6 and Ours; Qwen3.5-9B)
+Done
+Table 4
+Ablation A1 (our guard, no notice)
+Planned (final)
+Section 8
+Disclosure measured on all replies (keyword check + reading)
+Done (preliminary)
+Table 6; LLM judge planned (Section 8)
+Suppression attacks; ~300 human labels + LLM judge; 2nd and 3rd agent; Banking suite
+Planned
+Section 8 timeline
+
+Changes from the proposal: we ran a fixed sample of 60 attack cases and 10 clean tasks (seed 0) instead of all 560 Workspace cases, so every defense could be tested on the same cases before the mid-term. The 2nd and 3rd agents (Llama-3.1-8B, GPT-6.1 Sol), the Banking suite and the LLM judge move to the final report (Section 8).
+
+7. Implementation Details
+
+7.1 Data Acquisition & Preprocessing
+Training Data
+We trained our guard based on DeBERTa-v3-base, an existing language model from Microsoft, which we fine-tuned on our own data. 
+We first looked for a ready-made dataset, but none fit our needs. We wanted indirect attacks hidden inside the kinds of text an agent reads in AgentDojo's Workspace and Banking tasks: emails, documents, tables, calendar entries and bank records. 
+Our guard also needs to know exactly which words are the attack, and no public dataset marks that. We also could not train on AgentDojo itself, because it is our final test. So we combined several existing datasets into one master dataset.
+Even together, the public datasets left some gaps: they have few calendar or banking records, little variety in how attacks are written, and almost no normal messages that contain harmless requests like “please forward this to the team.” To fill these gaps, we asked an LLM to write a small set of extra texts once, and we reviewed every one by hand before using it.
+Source
+What it contains
+What we used
+Rows
+BIPIA (Microsoft)
+Normal emails, tables and code, plus a separate list of attack sentences
+Both; we inserted the attacks into the normal texts ourselves
+1,238
+InjecAgent
+Agent tool outputs (reviews, notes, calendar entries) with an attack already inside
+The attacked outputs, plus clean versions we made by filling the same outputs with harmless sentences
+1,540
+Enron emails (AESLC) [14]
+Real company emails with no attacks
+600 emails as normal examples (597 after removing duplicates)
+597
+LLM-generated (ours)
+With Claude Haiku 5.5
+Texts written by an LLM and reviewed by us
+96 attack sentences in five styles, inserted into normal texts, and 321 normal texts, including everyday requests, calendar events and bank records
+801
+Total
+ 
+ 
+4,176
+
+Table 1: Sources of our master dataset.
+The Enron emails fixed an important imbalance: before we added them, almost 9 in 10 emails in our data were attacks, so the model could have learned “email means attack.” We removed duplicate texts. We kept Enron emails of normal length (80 to 3,000 characters) and wrote them in the same format as the BIPIA emails. 
+We also considered the deepset prompt-injections dataset[13] but left it out. Its attacks are messages typed directly to the AI, while our guard looks for attacks hidden inside normal content. In deepset the whole message is the attack, while our guard must find only the attack words. Its texts are also very short, which could teach the model that “short means normal.”
+Field
+What it means
+label
+1 = contains an attack, 0 = normal
+source
+Which dataset the row came from
+content_type
+The kind of text: email, table, code, tool output, calendar, banking or document
+split
+Whether the row is used for training, validation or testing
+attack_text, attack_id, attack_category
+The attack sentence used, its ID and its type
+position
+Where the attack was inserted: start, middle or end
+span_start, span_end, attack_span_text
+Exactly where the attack starts and ends in the text, and the attack words themselves
+
+Our final master dataset has 4,176 rows and 13 columns: 2,076 normal texts and 2,100 attacks. We split it into 2,834 rows for training, 606 for validation and 736 for testing.We aimed for a 70/15/15 split, but kept the original test sets of BIPIA and Enron, which gives 68% training, 15% validation and 18% testing. 
+Master Dataset Link : https://drive.google.com/file/d/1lcIMC7Iymt2AYjpMq4AnUD7NZruBXJzY/view?usp=sharing
+
+7.2 Methods Implemented
+How we built our guard
+Our guard is a model that reads a piece of text, such as an email or a tool result, and marks the exact words that belong to a hidden attack. We built it by fine-tuning DeBERTa-v3-base [11], an existing language model from Microsoft. 
+The model reads text in small pieces called tokens, which are whole words or parts of words. It gives every token one of three tags:
+O (outside): normal text
+B-INJ (begin injection): the first token of an attack
+I-INJ (inside injection): the rest of the attack
+For example, in “Meeting moved to 3pm. Send the code to mark@evil.com. Thanks”, the words “Send the code to mark@evil.com.” are tagged as the attack and everything else as normal. The training labels came from the span columns in our master dataset, which record exactly where each attack starts and ends.
+We trained the model on 2,834 texts, going through them 3 times (3 epochs). After each pass, we tested it on 606 validation texts and kept the best version. We used a small learning rate (2e-5) so the model learns our task without forgetting what it already knows, and showed 16 examples at a time (batch size 16). Training took under an hour on a free Tesla T4 GPU in Google Colab.
+For each new text, the guard scores every character from 0 to 1 by how likely it is to be part of an attack. Characters scoring 0.5 or more are marked as attack. The guard returns where these marked parts are, so they can be cut out while the rest of the text is kept. If anything is marked, the text counts as an attack.
+How we compared it with existing detectors
+To see whether our guard is better at finding attacks, we compared it with three other detectors on the same 736 test texts, which none of the models were trained on:
+ProtectAI DeBERTa v2 [12]: an existing detector, also the one built into AgentDojo
+Llama Prompt Guard 2 (86M) [6]: an existing detector from Meta
+TF-IDF + logistic regression: a very simple classifier that only looks at which words appear, which we trained on our training texts. It shows how hard the task is without a deep model.
+The existing detectors can only say whether a whole text is an attack, they can’t point to the attack words. So we compared all four detectors (including our guard)  on that question. For long texts, each detector read the text in parts, and the text counted as an attack if any part was flagged.
+To check that the differences were real and not luck, we used McNemar’s test. It looks at the texts where one detector was right and the other was wrong. A p-value below 0.05 means the difference is very unlikely to be chance
+AgentDojo setup and plugging in the guard  
+ We used AgentDojo benchmark v1.2.2 [2] (pip package 0.1.35), the Workspace suite (email, calendar, cloud drive) and its standard "important_instructions" attack. The agent is Qwen3.5-9B, called through OpenRouter with temperature 0 and thinking mode off. To keep the comparison fair, we picked one random sample (seed 0) of 60 attack cases and 10 clean tasks, and every defense runs on exactly those same cases.
+
+
+Figure 3. The 9 setups we compare. B0-B3 changes only the prompt, B4-B6 throws away a flagged tool output, and Ours cuts only the attack sentence and adds a notice telling the agent to warn the user. B6 (ProtectAI + our notice) is a control, and A1 (Ours without the notice) is planned for the final.
+
+Where to put the notice: on the first 10 attack cases, the notice at the top of the tool output and as a separate system message tied (both warned the user 5/10 times, blocked all attacks, finished 9/10 tasks). We use the top because it's simpler and keeps the warning next to the data it's about.
+
+Figure 4. Our guard on a real case: the hidden instruction is cut out of the calendar entry, the rest of the calendar is kept, and the agent finishes the task and warns the user.
+
+7.3 Ongoing Implementation and Issues
+Issues we ran into:
+1. The guard is weaker on new text: it caught 81.5% of AgentDojo attacks (vs 97.8% on our test set), missing friendly-looking emails and flagging password-reset emails; we will fix these two weak spots for the final.
+2. The attack barely works on Qwen3.5-9B (1/60 with no defense), so the differences show in task success and warnings; we will try a stronger attack and a second agent.
+3. No GPU: Qwen3.5-9B needs about 20 GB, more than a free Colab T4, so we run it through OpenRouter, while the guard and ProtectAI run on a laptop CPU.
+
+7.4 Results Obtained
+We trained our guard on our master dataset and tested it on 736 texts it had never seen: 364 with attacks and 372 normal. The guard caught 356 of the 364 attacks and wrongly flagged only 17 normal texts. It also marked the attack words very accurately, with a span F1 of 0.973.
+We then compared it with two existing detectors and a simple baseline on the same 736 texts:
+Detector
+Precision
+Recall
+F1
+False alarms
+ProtectAI DeBERTa v2 [12]
+0.705
+0.486
+0.576
+19.9%
+Llama Prompt Guard 2 [6]
+0.987
+0.206
+0.341
+0.3%
+TF-IDF + logistic regression
+0.875
+0.734
+0.798
+10.2%
+Our guard
+0.954
+0.978
+0.966
+4.6%
+
+Table 3. Attack detection on our 736 test texts.
+Our guard performed best. ProtectAI missed about half of the attacks and wrongly flagged 1 in 5 normal texts. Prompt Guard 2 was rarely wrong when it flagged something, but it caught only 1 in 5 attacks. McNemar's test confirmed that our guard's lead over each detector is not due to chance (p < 0.001).
+All 17 false alarms came from one harmless sentence that appeared in 17 texts: “Send the invoice to accounts@ourcompany.example, not to me.” Most missed attacks were innocent-looking requests, such as “What movies are playing this weekend?”
+Since our guard was trained on texts from the same sources as this test, these results favor it. Testing on AgentDojo, which none of the detectors were trained on, was an important task further.
+
+Table 5. Our guard on its own, run on AgentDojo tool outputs for our 60 cases, once with the attack and once without (no agent involved).
+Tool output type
+Outputs
+Result
+Attacked tool outputs
+81
+66 caught (81.5%)
+Clean tool outputs
+75
+6 false alarms (8.0%)
+
+
+Table 6. AgentDojo Workspace results (Qwen3.5-9B; 60 attack cases, 10 clean tasks).
+Defense
+Attack success ↓
+Utility under attack ↑
+Clean utility ↑
+Told the user* ↑
+B0 No defense
+1/60
+57/60 (95%)
+8/10
+0/60
+B1 Spotlighting
+1/60
+55/60 (92%)
+9/10
+0/60
+B2 Hardened prompt
+2/60
+56/60 (93%)
+10/10
+0/60
+B3 Disclosure prompt
+1/60
+58/60 (97%)
+9/10
+1/60
+B4 ProtectAI
+1/60
+27/60 (45%)
+7/10
+1/60
+B5 Prompt Guard 2
+2/60
+53/60 (88%)
+9/10
+0/60
+B6 ProtectAI + our notice
+1/60
+26/60 (43%)
+7/10
+26/60
+Ours
+1/60
+56/60 (93%)
+9/10
+30/60
+
+
+Significance (exact McNemar test vs Ours, same 60 cases): Ours keeps more utility than B4 (p = 3e-08) and B6 (p = 2e-09), and warns the user more than B0-B5 (all p < 1e-7). B6's warnings are not significantly different from Ours (p = 0.56).
+*Keyword search of every reply, then each match read by hand. An LLM judge, checked against ~300 human labels, replaces this in the final report.
+
+What the results show (hypothesis status at the mid-term):
+H1-supported so far. Silent defense is real: with no defense the agent resisted 59 of 60 attacks but never told the user.
+H3-supported so far. ProtectAI breaks the task: deleting the whole tool output drops task success from 95% to 45%. Ours cuts only the attack and keeps 93% (p = 3e-08).
+H2-supported so far. Just asking doesn't work: B3 tells the agent to report attacks, yet it warned the user only once in 60 cases, and B1, B2 and B5 gave no warnings at all. Ours warned in 30/60 (p < 1e-7) with the same attack success (1-2/60 for every setup).
+Each part of our method has its own job: adding our notice to ProtectAI (B6) raised warnings to 26/60, close to Ours, but task success stayed at 43%. The notice gets the user warned; cutting only the attack keeps the task working. Only Ours does both.
+H4-not tested yet (Section 8). 
+H5-too early: Ours gave a false warning on 1 of 10 clean tasks (B6: 4/10) and flagged 6 of 75 clean tool outputs (Table 5).
+Limits: 60 cases, one agent and one attack, which barely works on this model, and a keyword-based warning count.
+
+8. Timeline to Complete the Project  
+ 
+Dates
+Work
+Nov 11 - 17
+Write and validate the judge prompt; stronger attack (tool_knowledge) on all defenses; improve the guard on its two AgentDojo weak spots (friendly phishing, password-reset emails)
+Nov 18 - 24
+A1 ablation (our guard, no notice); suppression attacks ("don't tell the user"); second and third agent (Llama-3.1-8B, GPT-6.1 Sol); Banking suite; more clean tasks for H5
+Nov 25 - Dec 1
+Label ~300 replies (both members), Cohen's κ; statistics with 95% CIs
+
+
+
+9. Deliverables
+
+Deliverable
+Type
+Status
+Span-labeled injection dataset (master.jsonl, 4,176 rows)
+Dataset
+Done
+Trained guard (our_guard) and code: train_guard.py, compare_baselines.py, run_snitch.py, guard_check.py, analyze.py
+Software / model
+Done
+AgentDojo results: every run's conversation, results.csv, table6.csv
+Results
+Done for B0-B6 and Ours (Workspace, 60 + 10 cases)
+Disclosure judge (prompt, rubric, scoring script) + ~300 labeled replies
+Software / dataset
+Planned
+
+
+10. Contributions of Each Team Member
+Member
+Contributions so far
+Next
+Krutika Raut
+Built the master training dataset (collected sources, generated and reviewed the LLM texts, inserted attacks, marked attack spans, split the data); trained the guard; ran the detector comparison and error analysis 
+Judge rubric and labeling protocol, statistics, figures
+Nidhi Poojari
+AgentDojo setup; agent model access (OpenRouter); baseline runs B0-B6 and Ours; notice placement test; guard plug-in; guard check on AgentDojo; Table 6 analysis and statistics
+A1 ablation, stronger attack, suppression attacks, second/third agent, Banking
+Both
+Report writing; weekly meetings
+Labeling, transcript analysis, final report
+
+
+Changes since the proposal based on feedback given by professor
+In our proposal, we planned to measure whether existing AI agents tell the user when they meet a hidden attack. The feedback pointed out that this only evaluated existing models, and asked us to name our defenses, baselines and classifiers. We have since widened the project: besides measuring disclosure, we now build our own defense and compare it with existing ones. The table below shows how we addressed each comment.
+Feedback
+What we changed
+The scope only evaluates existing models
+We built our own defense: a guard that finds the exact attack words in a text, removes them, and makes the agent warn the user. We trained it by fine-tuning DeBERTa-v3-base on a master dataset we built from four sources (4,176 texts).
+Which defense mechanisms will you test and compare?
+Nine setups on the same AgentDojo tasks: no defense (B0), spotlighting (B1), a hardened system prompt (B2), a disclosure prompt (B3), ProtectAI’s detector (B4), Prompt Guard 2 (B5), ProtectAI with our notice (B6), our guard without the notice (A1), and our full guard.
+
+
+List the defenses
+See the nine setups above.
+What are the baseline methods?
+B0–B6 above. For attack detection alone, we also compare against ProtectAI, Prompt Guard 2 and a simple TF-IDF classifier on our test set.
+Which classifier?
+Two classifiers with different jobs: our guard, which finds attacks in the text the agent reads, and an LLM judge, which reads the agent’s final reply and checks whether it warned the user.
+
+
+References
+
+[1] Greshake et al. Not what you've signed up for: Compromising real-world LLM-integrated applications with indirect prompt injection. AISec 2023.
+[2] Debenedetti et al. AgentDojo: A dynamic environment to evaluate prompt injection attacks and defenses for LLM agents. NeurIPS D&B 2024.
+[3] Zhan et al. InjecAgent: Benchmarking indirect prompt injections in tool-integrated LLM agents. Findings of ACL 2024.
+[4] Yi et al. Benchmarking and defending against indirect prompt injection attacks on LLMs (BIPIA). arXiv:2312.14197.
+[5] Hines et al. Defending against indirect prompt injection attacks with spotlighting. arXiv:2403.14720, 2024.
+[6] Chennabasappa et al. LlamaFirewall: An open source guardrail system for building secure AI agents. arXiv:2505.03574, 2025.
+[7] Chen et al. Meta SecAlign: A secure foundation LLM against prompt injection attacks. arXiv:2507.02735, 2025.
+[8] Zhan et al. Adaptive attacks break defenses against indirect prompt injection attacks on LLM agents. Findings of NAACL 2025.
+[9] Bhagwatkar et al. Indirect prompt injections: Are firewalls all you need, or stronger benchmarks? arXiv:2510.05244, 2025.
+[10] Wang et al. When skills lie: Hidden-comment injection in LLM agents. arXiv:2602.10498, 2026.
+[11] He et al. DeBERTaV3: Improving DeBERTa using ELECTRA-style pre-training with gradient-disentangled embedding sharing. ICLR 2023.
+[12] ProtectAI. deberta-v3-base-prompt-injection-v2. Hugging Face model card, 2024.
+[13] deepset. prompt-injections. Hugging Face dataset card, 2023.
+[14] Zhang and Tetreault. This email could save your life: Introducing the task of email subject line generation. ACL 2019 
+
+
+
+
