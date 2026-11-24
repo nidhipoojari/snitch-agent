@@ -262,6 +262,19 @@ give p < 1e-20 against all three, the same as at the mid-term.
   - it now flags some normal emails that contain a to-do list or a link;
   - the 17 invoice-sentence false alarms on our test set are unchanged.
 
+**How to run the agent with guard v2:** `run_snitch.py` has a new `--guard` option. Put the
+`our_guard_v2` folder next to `run_snitch.py`, then:
+
+```
+python run_snitch.py clean  --defense ours --guard our_guard_v2
+python run_snitch.py attack --defense ours --guard our_guard_v2
+python run_snitch.py collect
+```
+
+These runs are named `...-ours-top-v2`, so they get their own folder in `runs/`. Without `--guard`, the
+script would find the mid-term `...-ours-top` logs and silently reuse them (or overwrite them with
+`--force`).
+
 **Next steps:**
 1. Run the final "Ours" agent runs with `our_guard_v2`, including a rerun of "Ours" on Workspace.
 2. Merge the `guard-v2` branch into `main` (via a pull request).

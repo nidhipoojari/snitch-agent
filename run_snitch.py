@@ -18,6 +18,7 @@ Commands (run in this order)
   python run_snitch.py attack  --defense none         # B0 on the fixed cases
   python run_snitch.py attack  --defense protectai    # B4 on the same cases
   python run_snitch.py attack  --defense ours         # our guard on the same cases
+  python run_snitch.py attack  --defense ours --guard our_guard_v2   # guard v2 (runs named ...-ours-top-v2)
   python run_snitch.py collect                        # all runs -> results.csv + a summary table
 
 The agent model is any OpenAI-compatible server. Default: Qwen3.5-9B on OpenRouter.
@@ -213,17 +214,25 @@ def build_pipeline(args):
     elif args.defense == "promptguard":
         steps.append(PromptGuard2())
     elif args.defense == "ours":
-        events = Path(args.logdir) / f"guard_events_{args.mode}.jsonl"
-        guard = OurGuard(HERE / "our_guard", args.notice, events)
+        events = Path(args.logdir) / f"guard_events_{args.mode}{guard_suffix(args)}.jsonl"
+        guard = OurGuard(HERE / args.guard, args.notice, events)
         steps.append(guard)
     steps.append(llm)
     pipeline = AgentPipeline([SystemMessage(system), InitQuery(), llm,
                               ToolsExecutionLoop(steps)])
-    tag = args.defense + (f"-{args.notice}" if args.defense == "ours" else "") + ("-think" if args.thinking else "")
+    tag = (args.defense + (f"-{args.notice}{guard_suffix(args)}" if args.defense == "ours" else "")
+           + ("-think" if args.thinking else ""))
     pipeline.name = f"{args.model_id.replace('/', '_')}-{tag}"
     # the attack text addresses the model by name; give it a neutral one
     models.MODEL_NAMES[pipeline.name] = "AI assistant"
     return pipeline, guard
+
+
+def guard_suffix(args):
+    """'' for the mid-term guard (our_guard), '-v2' for our_guard_v2, so runs with another guard get
+    their own name and log folder and never reuse or overwrite the mid-term logs."""
+    name = Path(args.guard).name
+    return "" if name == "our_guard" else "-" + name.replace("our_guard_", "")
 
 
 # --------------------------------------------------------------------------- commands
@@ -315,6 +324,9 @@ def main():
                                 "protectai-notice", "ours"])
         r.add_argument("--notice", choices=["top", "system", "none"], default="top",
                        help="ours only: notice at the top of the tool output, as a system message, or none (A1)")
+        r.add_argument("--guard", default="our_guard",
+                       help="ours only: guard folder next to this file, e.g. our_guard_v2 "
+                            "(runs are then named ...-ours-top-v2)")
         r.add_argument("--model-id", default="qwen/qwen3.5-9b")
         r.add_argument("--base-url", default="https://openrouter.ai/api/v1")
         r.add_argument("--logdir", default=str(HERE / "runs"))
