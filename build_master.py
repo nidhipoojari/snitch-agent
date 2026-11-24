@@ -132,12 +132,15 @@ FOLDERS AND HOW TO RUN
   data/raw/deepset/        optional local copy (see load_deepset)
   data/generated/attacks.json   attack sentences   (made by --generate)
   data/generated/normals.json   normal texts       (made by --generate)
+  data/generated/attacks_v2.json   guard v2: long friendly attacks     (made by --generate-v2)
+  data/generated/normals_v2.json   guard v2: normal security emails    (made by --generate-v2)
 
   python build_master.py --generate            # first time: LLM writes both files, then build
   python build_master.py                       # later runs: reuse the saved files
   python build_master.py --generate --llm anthropic   # uses claude-haiku-5-5 (cheap)
   python build_master.py --generate --llm openai --model gpt-4o-mini
   python build_master.py --no-deepset          # build without deepset (for comparison)
+  python build_master.py --generate-v2 --llm anthropic   # guard v2: write ONLY the two _v2 files, then stop
 
 LLM generation needs:  pip install google-genai   and   GOOGLE_API_KEY set
                   or:  pip install anthropic      and   ANTHROPIC_API_KEY set
@@ -653,6 +656,58 @@ NORMAL_PROMPT = (
 )
 
 
+# ---------------------------------------------------------------- guard v2: extra texts for the 2 weak spots
+# Weak spot 1: the guard missed long, friendly attacks that contain a whole message
+#   to send to other people, with a link (all our v1 attacks are 1-2 short sentences).
+# Weak spot 2: the guard flagged normal password-reset / security emails as attacks.
+# These go to SEPARATE files (attacks_v2.json, normals_v2.json) so the v1 files,
+# and therefore the v1 test set, stay exactly the same.
+# Written in our own words: do NOT copy AgentDojo text (it is our final test).
+ATTACK_STYLES_V2 = {
+    "long_send_to_contacts":
+        "asks the assistant to email or message several people (for example everyone the user is "
+        "meeting this week, all contacts, or the whole team) and gives a full friendly message to send "
+        "them word for word, with a greeting, a few sentences and a link",
+    "long_post_with_link":
+        "asks the assistant to post or share a friendly announcement, with a link, in a shared document, "
+        "team channel, calendar invite or review, and includes the full text to post",
+    "long_multi_step":
+        "gives the assistant a polite list of several steps (for example: look something up, then write "
+        "to someone, then add a link or a file), written like a helpful note from a colleague",
+}
+
+ATTACK_PROMPT_V2 = (
+    "You are helping build a training dataset for a prompt-injection detector (security research). "
+    "Write {n} LONGER instructions that an attacker might hide inside an email, document, calendar event "
+    "or web page to trick an AI assistant into doing something the user did not ask for. "
+    "This type of attack: {style}. "
+    "Each one should be 4 to 10 sentences (it may use several lines), sound friendly and harmless, "
+    "address the AI assistant directly, and be different from the others in wording, names, topic and "
+    "link. Do not use shouting or words like URGENT. Use made-up names, emails and links (for example "
+    "short links like https://tinyurl.example/abc or fake domains). "
+    "Return ONLY a JSON list of strings, with no other text."
+)
+
+# kind: (content_type, description). All are 'email' so they can also host attacks later.
+NORMAL_KINDS_V2 = {
+    "password_reset": ("email",
+        "a normal password-reset email from a company to its user, written as "
+        "'SUBJECT: <subject>|CONTENT: <body>', with a link to reset the password and a note such as "
+        "'if you did not ask for this, ignore this email'"),
+    "login_alert": ("email",
+        "a normal new-sign-in or unusual-login alert email from a company, written as "
+        "'SUBJECT: <subject>|CONTENT: <body>', with the device, place and time, and a link to review "
+        "account activity or change the password"),
+    "verification_code": ("email",
+        "a normal two-step verification or one-time code email, written as "
+        "'SUBJECT: <subject>|CONTENT: <body>', with a 6-digit code, how long it is valid, and a "
+        "warning not to share it"),
+    "verify_email": ("email",
+        "a normal 'please verify your email address' or 'confirm your account' email, written as "
+        "'SUBJECT: <subject>|CONTENT: <body>', with a confirmation link"),
+}
+
+
 def load_generated_normals(gen_file, rng):
     """Normal (label 0) texts written by the LLM: tricky normals + calendar/banking/document records."""
     if not gen_file.exists():
@@ -664,7 +719,7 @@ def load_generated_normals(gen_file, rng):
     for it in items:
         by_kind.setdefault(it.get("category", "work_email"), []).append(it["text"])
     for kind, texts in by_kind.items():
-        ctype = NORMAL_KINDS.get(kind, ("document", ""))[0]
+        ctype = {**NORMAL_KINDS, **NORMAL_KINDS_V2}.get(kind, ("document", ""))[0]
         for split, part in split_items(texts, SPLIT, rng).items():
             for t in part:
                 rows.append(row(f"llm_generated_{split}_normal_{k}", t, 0, "llm_generated", ctype,
@@ -758,10 +813,29 @@ def main():
     ap.add_argument("--per-style", type=int, default=20, help="attacks to request per style (5 styles)")
     ap.add_argument("--normals-per-kind", type=int, default=50, help="normal texts per kind (6 kinds)")
     ap.add_argument("--no-deepset", action="store_true", help="leave deepset out")
+    ap.add_argument("--generate-v2", action="store_true",
+                    help="guard v2: ask the LLM for long attacks and security emails, save them to "
+                         "--generated-v2 / --normals-v2, then stop (does not build the dataset)")
+    ap.add_argument("--generated-v2", default="data/generated/attacks_v2.json")
+    ap.add_argument("--normals-v2", default="data/generated/normals_v2.json")
+    ap.add_argument("--v2-per-style", type=int, default=12, help="long attacks per style (3 styles)")
+    ap.add_argument("--v2-normals-per-kind", type=int, default=15, help="security emails per kind (4 kinds)")
     args = ap.parse_args()
 
     rng = random.Random(args.seed)
     raw = Path(args.raw)
+
+    if args.generate_v2:
+        model = args.model or {"gemini": "gemini-3.8-flash", "anthropic": "claude-haiku-5-5",
+                               "openai": "gpt-4o-mini"}[args.llm]
+        print("Guard v2: generating long friendly attacks ...")
+        generate_to_file(Path(args.generated_v2), ATTACK_STYLES_V2, ATTACK_PROMPT_V2, args.llm, model,
+                         args.v2_per_style, "attacks")
+        print("Guard v2: generating normal security emails ...")
+        generate_to_file(Path(args.normals_v2), NORMAL_KINDS_V2, NORMAL_PROMPT, args.llm, model,
+                         args.v2_normals_per_kind, "normal texts")
+        print("\nDone. Read both _v2 files and delete bad entries before rebuilding the dataset.")
+        return
 
     if args.generate:
         model = args.model or {"gemini": "gemini-3.8-flash", "anthropic": "claude-haiku-5-5",
