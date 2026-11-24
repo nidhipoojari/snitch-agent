@@ -20,7 +20,7 @@ is our final test.
 
 | # | Step | Status |
 |---|---|---|
-| 1 | Generate long friendly attacks and normal security emails (Claude Haiku) | Code done, waiting to run |
+| 1 | Generate long friendly attacks and normal security emails (Claude Haiku) | Done: 36 attacks, 60 emails |
 | 2 | (same run as step 1) | — |
 | 3 | Read both new files by hand and delete bad entries | To do |
 | 4 | Remove the filler sentence behind the false alarms on our test set | To do |
@@ -57,3 +57,11 @@ python build_master.py --generate-v2 --llm anthropic
 
 This only writes the two `_v2` files. It does not rebuild the dataset. If a file already exists it is
 not overwritten (delete it to generate again).
+
+**Result:** 36 attacks (500–700 characters each, 3 to 4 times longer than any v1 attack) and
+60 security emails (110–420 characters). All are on topic, and no email talks to an AI.
+Each text is about 150 tokens, well under the guard's 512-token window.
+
+One thing to watch: half of the attacks use a short link (`tinyurl.example`, `bit.example`,
+`short.example`) and none of the normal emails do, so the guard could learn "short link = attack".
+We check for this in step 7.
