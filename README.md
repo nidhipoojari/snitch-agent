@@ -144,6 +144,9 @@ export AGENT_API_KEY=...        # OpenRouter key (or "EMPTY" for a local vLLM se
 
 | Step | Command | Output |
 |---|---|---|
+| Get the raw data | `git clone` BIPIA and InjecAgent into `data/raw/`, then `python download_data.py` (Enron, deepset) | `data/raw/` |
+| Build the dataset | `python build_master.py` (reuses `data/generated/*.json`; `--generate` asks an LLM only for missing files) | `data/master.jsonl` |
+| Explore the dataset | `streamlit run dataset_explorer.py` | browser app |
 | Train the guard | `python train_guard.py --data data/master.jsonl --out our_guard` | `our_guard/` + test metrics |
 | Compare detectors | `python compare_baselines.py` | `comparison/` |
 | Pick the fixed cases (done) | `python run_snitch.py sample` | `sample_cases.json` |
@@ -166,6 +169,9 @@ export AGENT_API_KEY=...        # OpenRouter key (or "EMPTY" for a local vLLM se
 
 <pre>
 <b>snitch-agent/</b>
+├── <a href="download_data.py">download_data.py</a>          # saves local copies of Enron (AESLC) and deepset into data/raw
+├── <a href="build_master.py">build_master.py</a>           # builds data/master.jsonl (sources, attack insertion, spans, splits)
+├── <a href="dataset_explorer.py">dataset_explorer.py</a>       # Streamlit app to browse master.jsonl
 ├── <a href="train_guard.py">train_guard.py</a>            # trains the span guard; also the Guard class used at run time
 ├── <a href="compare_baselines.py">compare_baselines.py</a>      # guard vs ProtectAI, Prompt Guard 2, TF-IDF on the test split
 ├── <a href="run_snitch.py">run_snitch.py</a>             # AgentDojo harness: every defense B0-B6 + ours
@@ -177,7 +183,8 @@ export AGENT_API_KEY=...        # OpenRouter key (or "EMPTY" for a local vLLM se
 ├── <a href="disclosure_labels.csv">disclosure_labels.csv</a>     # "told the user" labels (hand label wins)
 ├── <a href="guard_check.csv">guard_check.csv</a>           # per-output guard results on AgentDojo
 ├── <a href="data">data/</a>
-│   └── <a href="data/master.jsonl">master.jsonl</a>          # 4,176 span-labeled training/test texts
+│   ├── <a href="data/master.jsonl">master.jsonl</a>          # 4,176 span-labeled training/test texts
+│   └── <a href="data/generated">generated/</a>            # LLM-written texts, reviewed by hand (attacks.json, normals.json)
 ├── <a href="our_guard">our_guard/</a>                # guard config, tokenizer, test metrics (weights not in git)
 ├── <a href="comparison">comparison/</a>               # detector comparison outputs
 ├── <a href="runs">runs/</a>                     # full AgentDojo logs for every setup (every conversation)
