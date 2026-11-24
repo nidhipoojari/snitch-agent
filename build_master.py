@@ -141,6 +141,7 @@ FOLDERS AND HOW TO RUN
   python build_master.py --generate --llm openai --model gpt-4o-mini
   python build_master.py --no-deepset          # build without deepset (for comparison)
   python build_master.py --generate-v2 --llm anthropic   # guard v2: write ONLY the two _v2 files, then stop
+  python build_master.py --no-deepset --v2     # guard v2: v1 rows unchanged + new rows -> data/master_v2.jsonl
 
 LLM generation needs:  pip install google-genai   and   GOOGLE_API_KEY set
                   or:  pip install anthropic      and   ANTHROPIC_API_KEY set
@@ -708,7 +709,7 @@ NORMAL_KINDS_V2 = {
 }
 
 
-def load_generated_normals(gen_file, rng):
+def load_generated_normals(gen_file, rng, id_prefix=""):
     """Normal (label 0) texts written by the LLM: tricky normals + calendar/banking/document records."""
     if not gen_file.exists():
         print(f"  [skip] no generated normal texts at {gen_file} (run with --generate to create them)")
@@ -722,13 +723,13 @@ def load_generated_normals(gen_file, rng):
         ctype = {**NORMAL_KINDS, **NORMAL_KINDS_V2}.get(kind, ("document", ""))[0]
         for split, part in split_items(texts, SPLIT, rng).items():
             for t in part:
-                rows.append(row(f"llm_generated_{split}_normal_{k}", t, 0, "llm_generated", ctype,
+                rows.append(row(f"{id_prefix}llm_generated_{split}_normal_{k}", t, 0, "llm_generated", ctype,
                                 category=f"normal/{kind}", split=split))
                 k += 1
     return rows
 
 
-def load_generated_attacks(gen_file, host_rows, rng):
+def load_generated_attacks(gen_file, host_rows, rng, id_prefix=""):
     """LLM attack sentences inserted into NORMAL texts of the same split
     (BIPIA emails/tables, Enron emails, calendar, banking and document records)."""
     if not gen_file.exists():
@@ -752,7 +753,7 @@ def load_generated_attacks(gen_file, host_rows, rng):
                 h = rng.choice(hosts[split][rng.choices(types, weights)[0]])
                 pos = rng.choice(["start", "middle", "end"])
                 text, s, e = insert_attack(h["text"], attack, pos, rng)
-                rows.append(row(f"llm_generated_{split}_atk_{k}", text, 1,
+                rows.append(row(f"{id_prefix}llm_generated_{split}_atk_{k}", text, 1,
                                 "llm_generated", h["content_type"], attack_text=attack, category=cat,
                                 position=pos, split=split, span=(s, e)))
                 k += 1
@@ -820,7 +821,13 @@ def main():
     ap.add_argument("--normals-v2", default="data/generated/normals_v2.json")
     ap.add_argument("--v2-per-style", type=int, default=12, help="long attacks per style (3 styles)")
     ap.add_argument("--v2-normals-per-kind", type=int, default=15, help="security emails per kind (4 kinds)")
+    ap.add_argument("--v2", action="store_true",
+                    help="guard v2: build the v1 rows exactly as before, then ADD the rows from "
+                         "--generated-v2 / --normals-v2 (ids start with 'v2_'). Default --out: "
+                         "data/master_v2.jsonl")
     args = ap.parse_args()
+    if args.v2 and args.out == "data/master.jsonl":
+        args.out = "data/master_v2.jsonl"        # never overwrite the v1 dataset by accident
 
     rng = random.Random(args.seed)
     raw = Path(args.raw)
@@ -863,6 +870,24 @@ def main():
     got = load_generated_attacks(Path(args.generated), rows, rng)
     print(f"  {len(got)} rows")
     rows += got
+
+    # Guard v2: ADD new rows after all v1 rows. They use their own random generator, so every
+    # v1 row (text, split, span) is exactly the same as in data/master.jsonl.
+    if args.v2:
+        for f in (args.generated_v2, args.normals_v2):
+            if not Path(f).exists():
+                raise SystemExit(f"--v2 needs {f}; make it first with --generate-v2")
+        rng_v2 = random.Random(f"v2-{args.seed}")
+        print("Guard v2: loading security emails ...")
+        new_normals = load_generated_normals(Path(args.normals_v2), rng_v2, id_prefix="v2_")
+        print(f"  {len(new_normals)} rows")
+        # long attacks go into v1 normal texts AND the new security emails (same split only),
+        # so the guard has to find the attack itself, not learn "security email = normal"
+        print("Guard v2: loading long attacks ...")
+        new_attacks = load_generated_attacks(Path(args.generated_v2), rows + new_normals, rng_v2,
+                                             id_prefix="v2_")
+        print(f"  {len(new_attacks)} rows")
+        rows += new_normals + new_attacks
 
     df = pd.DataFrame(rows)
     before = len(df)
