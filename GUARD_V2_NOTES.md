@@ -25,8 +25,8 @@ is our final test.
 | 3 | Read both new files by hand and delete bad entries | To do |
 | 4 | ~~Remove the filler sentence behind the false alarms on our test set~~ | **Skipped** (see below) |
 | 5 | Rebuild the dataset: add new rows **without changing the old ones**, so the old test set stays the same and scores are comparable with the mid-term | Done: `data/master_v2.jsonl` |
-| 6 | Retrain on Colab with `train_guard.py` | To do |
-| 7 | Check: `--eval-only`, `compare_baselines.py`, `guard_check.py` | To do |
+| 6 | Retrain on Colab with `train_guard.py` | Done: `our_guard_v2` on Drive |
+| 7 | Check: `compare_guards.py`, `guard_check.py`, `compare_baselines.py` | In progress |
 | 8 | Upload the model to Drive as `our_guard_v2` and tell Nidhi | To do |
 
 ## Step 1: new training texts
@@ -116,3 +116,59 @@ python build_master.py --raw <folder with BIPIA, InjecAgent, aeslc> --no-deepset
 
 **In step 7 we report two test scores:** on the old test rows (to compare with the mid-term) and on
 the new `v2_` test rows (to see whether long attacks and security emails improved).
+
+## Step 6: retraining
+
+**What:** the same `train_guard.py` and the same settings as the mid-term (DeBERTa-v3-base, 3 epochs),
+trained on `master_v2.jsonl` on a free Colab T4 GPU. The output is `our_guard_v2/`, on Drive in
+`IS755_Project`, next to the old `our_guard/` (which is not touched).
+
+```
+python train_guard.py --data master_v2.jsonl --out our_guard_v2
+```
+
+**Scores on the whole v2 test set (old + new test rows together):**
+
+| | Mid-term guard | Guard v2 |
+|---|---|---|
+| F1 | 0.966 | 0.970 |
+| Attacks caught | 356 of 364 | 390 of 394 |
+| False alarms | 17 of 372 | 20 of 384 |
+| Span F1 (marked the right words) | 0.973 | 0.986 |
+
+This mixes old and new test rows, so it is **not** the fair comparison. Step 7 splits them.
+
+## Step 7: checking (in progress)
+
+New and changed scripts:
+
+| File | What it does |
+|---|---|
+| `compare_guards.py` | **New.** Compares the two guards on the **old** test rows only (fair comparison with the mid-term), scores guard v2 on the **new** `v2_` rows, and lists every old test row where the two guards disagree. No GPU needed. |
+| `guard_check.py` | Added `--guard` and `--out` options, so it can test `our_guard_v2` without replacing the mid-term `guard_check.csv`. |
+
+### Step 7a result: `compare_guards.py` (our own test set)
+
+Guard v2 here is from the **second** training run. The first run's model was lost when Colab
+disconnected before it finished saving to Drive. The second run's scores are close to the first's.
+
+**1. Old test rows: the same 736 rows as the mid-term, so this is the fair comparison.**
+
+| | Mid-term guard | Guard v2 |
+|---|---|---|
+| Attacks caught | 356 of 364 | **360 of 364** |
+| Missed | 8 | **4** |
+| False alarms | 17 of 372 | 20 of 372 |
+| F1 | 0.966 | **0.968** |
+
+- **Fewer misses:** v2 catches 5 BIPIA attacks the old one missed, plus 1 LLM attack. It now misses 2
+  BIPIA attacks that the old one caught.
+- **False alarms:** the same 17 invoice-sentence ones are still there, plus 3 new ones (2 code
+  snippets, 1 Enron email where it marked the single word "creative").
+
+**2. New `v2_` test rows: 30 long attacks caught out of 30, and 0 false alarms on 12 security emails.**
+This is encouraging, but these rows were written by the same LLM with the same prompts as the
+training rows, so they are easy. The real test is AgentDojo (step 7b), which the guard never saw.
+
+**Note:** every training run comes out a little different, so a change of a few rows (like +4 caught,
++3 false alarms) is about the size of that run-to-run difference.

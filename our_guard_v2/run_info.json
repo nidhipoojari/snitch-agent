@@ -1,0 +1,25 @@
+{
+  "args": {
+    "data": "master_v2.jsonl",
+    "model": "microsoft/deberta-v3-base",
+    "out": "our_guard_v2",
+    "epochs": 3,
+    "lr": 2e-05,
+    "batch": 16,
+    "max_len": 512,
+    "stride": 128,
+    "inj_weight": 1.0,
+    "threshold": 0.5,
+    "limit": null,
+    "eval_only": false,
+    "no_fp16": false,
+    "seed": 42
+  },
+  "data_file_md5": "eaf458b7614309772b46190bb4b4e13d",
+  "rows": {
+    "train": 2999,
+    "val": 639,
+    "test": 778
+  },
+  "gpu": "Tesla T4"
+}
