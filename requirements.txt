@@ -7,3 +7,5 @@ protobuf
 numpy
 pandas
 scikit-learn
+datasets
+streamlit

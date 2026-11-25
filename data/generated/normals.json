@@ -1,0 +1,1607 @@
+[
+  {
+    "text": "SUBJECT: Q3 budget review notes|CONTENT: Hi Dana, attached are the revised Q3 budget notes from Tuesday's meeting. Could you forward them to the finance team by end of day Thursday? Let me know if the travel line item still needs a second look.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Invoice 4471 from Brightline Supplies|CONTENT: Hello Marcus, the invoice for the March office supply order came in for $1,284.50. Please route it to accounts payable for payment by Friday, April 12. Thanks, Priya",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Team lunch Thursday|CONTENT: Hi all, we're booking a table atOla's Kitchen for Thursday at 12:30. Reply to this thread by Wednesday so I can give the restaurant an accurate headcount. Vegetarian options are available.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Updated onboarding checklist|CONTENT: Hi Javier, I updated the onboarding checklist in the shared drive with the new laptop request steps. Please review rows 14 through 22 and add any missing IT contacts before Monday. Thank you.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm conference room booking|CONTENT: Hi Lena, could you confirm that you have Conference Room B reserved for the client call on May 8 from 2:00 to 3:30? The calendar shows a conflict with another team. Let me know either way.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Vendor contract renewal|CONTENT: Hi Tom, the renewal for our cloud storage contract with Veltrix Systems is due on June 30. Please review the attached redline and send your comments to legal at legal@harlowgroup.example by June 14.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Quarterly all-hands agenda|CONTENT: Team, here's the draft agenda for the quarterly all-hands on Friday. Please add your updates to the slide deck before Wednesday noon. Slides should be no more than three per team.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Expense report reminder|CONTENT: Hi everyone, a quick reminder that expense reports for February need to be submitted in the portal by the 5th. Attach receipts for any item over $25. Thanks for staying on top of this.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Sales data for region West|CONTENT: Hey Ruth, I pulled the sales numbers for the West region into the tracker spreadsheet. Can you check the totals in column F against your records and flag any mismatch by Tuesday?",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Holiday schedule|CONTENT: Hi folks, the office will be closed on Monday, May 27 for Memorial Day. Please plan any deliveries or client deadlines around that date. Reply if you have questions about coverage.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Payroll correction|CONTENT: Hello Kenji, payroll flagged a missing overtime entry for the week of March 3. Could you submit a timesheet correction through the HR portal by March 15 so it's included in the next run? Thanks.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Design mockups v2|CONTENT: Hi Sofia, version two of the homepage mockups is in the design folder. Please leave comments directly in the file rather than by email. We're aiming to finalize by the 20th.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Warehouse inventory count|CONTENT: Team, the annual inventory count at the Dayton warehouse starts Monday, September 9. Please make sure your bins are labeled and that the counting sheets are printed before 7 a.m. Thanks, Greg",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Welcome to the team|CONTENT: Hi Amara, welcome aboard! Your first day is Monday at 9:00 at the Lincoln Street office. Please bring a government ID and reply to confirm you received the parking details.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Forwarding the client brief|CONTENT: Hi Owen, I'm forwarding the client brief from Northwind Logistics. Please review it and add your estimate to the project sheet by Thursday so we can prepare the proposal.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Training registration|CONTENT: Hi Chen, the spring safety training is open for registration. Sign up through the learning portal by April 30. Sessions are two hours and there are seats available on both Tuesday and Thursday.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Printer maintenance|CONTENT: Hi all, the third-floor printer will be offline Wednesday afternoon for scheduled maintenance. Please send urgent print jobs to the second-floor unit instead. It should be back by 4 p.m.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Project timeline update|CONTENT: Hi Nadia, I moved the testing phase to April 18 to give QA more time. Please update your milestones in the project tracker and let me know if this affects your dependencies.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Parking permit renewal|CONTENT: Hello, parking permits for the Riverside garage expire on June 1. Renewal forms are on the facilities page. Please submit yours with the $40 fee by May 20 to avoid a gap in access.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Client meeting notes|CONTENT: Hi Beth, here are my notes from this morning's call with Alder Partners. Could you review the action items and confirm which ones you'll own? I'll put the final list in the shared doc.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Purchase order approval|CONTENT: Hi Raj, PO 20913 for $6,400 in lab equipment is waiting for your approval in the procurement system. Please review and approve by Wednesday so the vendor can ship on schedule.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Updated phone list|CONTENT: Team, I've refreshed the department phone list in the shared folder. Please check your extension and let me know if anything is wrong. The old version can be deleted once you've confirmed.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Friday coffee chat|CONTENT: Hi Mei, would you be free for a quick coffee chat this Friday around 3 p.m.? I'd like to get your input on the new intake process. Let me know what works.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Fire drill schedule|CONTENT: Hi all, the building fire drill is scheduled for Thursday, October 12 at 10:15 a.m. Please follow the posted exit routes and meet at the north parking lot. No reply needed.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Marketing budget spreadsheet|CONTENT: Hi Carlos, I added the Q4 marketing spend to the budget spreadsheet. Could you update the paid social column with actuals from the ad platform by Monday morning?",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Software license renewal|CONTENT: Hello Ingrid, our license for the design suite renews on August 1 for 25 seats. Please confirm the seat count with your team and reply by July 20 so procurement can process the order.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Candidate interview schedule|CONTENT: Hi Paul, I've scheduled interviews with the two finalists for the analyst role on Tuesday. Please confirm you can join the 10:00 and 1:30 slots and send feedback forms within 24 hours.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Lab safety audit|CONTENT: Hi Dr. Okafor, the lab safety audit is scheduled for May 14. Please complete the checklist for Bay 3 and return it to facilities by May 10. Let me know if any equipment needs service.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Shared drive cleanup|CONTENT: Team, we're archiving files older than two years from the shared drive next week. If you have something you still need, move it to the Active folder by Friday. Thanks for helping keep things tidy.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Travel booking for Denver|CONTENT: Hi Sam, please book your flights for the Denver conference on the company travel portal. The budget cap is $650 round trip. Send me your itinerary once it's confirmed.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Press release draft|CONTENT: Hi Lauren, the draft press release for the Series B announcement is attached. Please review the quotes from our CEO and reply with any changes by 3 p.m. tomorrow.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Recycling program update|CONTENT: Hello all, the building recycling bins have moved to the lobby. Please bring cardboard to the loading dock on Mondays. Thank you for helping us reduce waste this quarter.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Customer survey results|CONTENT: Hi Jun, the results from the March customer survey are in the report folder. Could you summarize the top three complaints for the Tuesday product review? A half-page is fine.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Password policy reminder|CONTENT: Hi everyone, passwords for the finance systems must be updated by the end of the month under our standard policy. Use the self-service reset page and follow the length requirements listed there.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Contract signature needed|CONTENT: Hi Hannah, the service agreement with Crestview Dental is ready for signature. Please sign the last page and send it back through DocuSign by Thursday so we can start the project on the 15th.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Warehouse shift swap|CONTENT: Hi Diego, can you cover the Saturday morning shift on June 14? Jamal is out that week. Reply by Wednesday so I can update the schedule.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Board deck feedback|CONTENT: Hi Rachel, I've attached the draft board deck for next month. Please review slides 4 through 9 for your division and send comments to me by Monday afternoon.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Mileage reimbursement|CONTENT: Hi Ben, I noticed your mileage log for April is missing the odometer readings for two trips. Please add them to the form and resubmit by May 3 so we can process the payment.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Quarterly newsletter submissions|CONTENT: Hello, we're collecting submissions for the Q2 newsletter. Send a short paragraph about your team's wins and a photo if you have one. The deadline is June 6.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Vendor onboarding form|CONTENT: Hi Alicia, Halvorsen Printing has been approved as a new vendor. Please complete the onboarding form in the procurement folder and return it with their W-9 by Friday.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Team offsite logistics|CONTENT: Hi all, the offsite is set for September 22 at the Lakeview Lodge. Please fill in the dietary form in the shared sheet by September 8. Carpool details will follow.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Support ticket escalation|CONTENT: Hi Marcus, ticket 88342 from Oakridge Medical has been open for five days. Could you take a look today and update the customer directly? Let me know if you need help from engineering.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Library book return|CONTENT: Hi Nora, the reference binder you borrowed from the library is due back on Friday. Please return it to the front desk or let me know if you need an extension.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Annual review scheduling|CONTENT: Hi Greg, let's schedule your annual performance review for the week of November 11. Please propose two times that work for you and I'll send the calendar invite.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Kitchen supplies restock|CONTENT: Team, we're running low on coffee filters and paper cups in the break room. I've placed an order for Thursday delivery. Let me know if you need anything else added.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Grant report deadline|CONTENT: Hi Yusuf, the grant progress report for the Hanley Foundation is due March 28. Please send your section on program outcomes by March 21 so I can compile the final draft.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Visitor badge request|CONTENT: Hi Olivia, our guest from Pinecrest Engineering arrives Monday at 11 a.m. Please request a visitor badge at the front desk under my name and let me know if you need the badge number.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Dashboard access|CONTENT: Hi Felix, I've granted you read access to the operations dashboard. Log in with your usual credentials and let me know if the Q2 tab doesn't load for you.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Field trip permission forms|CONTENT: Dear parents, the permission forms for the April science museum trip are due to the front office by April 2. Please sign and return the form with the $12 fee. Thank you.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Retirement party|CONTENT: Hi all, we're celebrating Dave's 30 years with the company on Friday at 4 p.m. in the Maple Room. Please sign the card at my desk and RSVP by Wednesday.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Data migration timeline|CONTENT: Hi Priyanka, the customer records migration is scheduled for the weekend of July 12. Please confirm that your team has reviewed the mapping document and flag any fields that need changes by July 5.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Catering order for workshop|CONTENT: Hi Tanya, I've confirmed catering for the Thursday workshop with Fresh Table Co. for 35 people. Please check the order sheet and let me know if the count needs to change by Tuesday.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Account reconciliation|CONTENT: Hi Robert, the April bank reconciliation is ready for review in the finance folder. Please check the outstanding checks list and initial the summary tab by May 9 so we can close the month.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Dinner on Sunday?|CONTENT: Hi Mark, are you and Lisa free for dinner this Sunday around 6? We're thinking of trying the new Thai place on Elm Street. Let me know if that works for you, and bring the photos from your trip!",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Rent payment reminder|CONTENT: Hello Mrs. Patel, just a quick reminder that the March rent of $1,450 is due on the 1st. You can drop the check in the mailbox by the front door or send it through the portal. Thanks, Daniel Ortiz",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Soccer practice schedule|CONTENT: Hi parents, practice has moved to Thursdays at 4:30 starting next week because the field on Maple Avenue is closed for repairs. Please make sure your kids bring water bottles and shin guards. See you on the field!",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Grandma's birthday|CONTENT: Hey sis, Grandma turns 90 on June 12th and we're planning a small lunch at her place. Could you pick up the cake from Sweet Rose Bakery on the way over? I'll cover the cost when I see you.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Invoice #4471 for website redesign|CONTENT: Dear Ms. Chen, attached is the invoice for the website redesign project totaling $3,200. Payment is due within 30 days. Please reply to confirm you received it. Best regards, Tom Briggs, Briggs Design Studio",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Lost umbrella|CONTENT: Hi Jen, I think I left a black umbrella in your car after the carpool last Tuesday. If you find it, could you drop it off at school on Friday? Thanks so much!",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Book club this month|CONTENT: Hi everyone, our book club will meet on the 18th at Priya's house. We're discussing 'The Night Garden' by Lena Hart. Please bring a snack to share and jot down two questions you'd like to talk about.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Parking permit renewal|CONTENT: Dear Resident, your parking permit for Building C expires on April 30. Please renew at the front office at 210 Oak Street, Suite 4, or call 555-0142 to arrange a pickup time.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Car repair estimate|CONTENT: Hi Robert, the shop finished looking at your Honda. The brake pads and rotors need replacing, and the estimate is $412. Let me know by Wednesday if you want us to go ahead. Thanks, Eastside Auto Care",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Weekend hike|CONTENT: Hey Kai, the weather looks great Saturday, so I'm thinking we hit the Cedar Ridge trail around 8 a.m. Can you grab sandwiches and I'll bring the water? Text me at 555-0188 if you're in.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Field trip permission slip|CONTENT: Dear families, the Grade 4 trip to the science museum is on October 9th. Please sign the attached permission slip and return it to Ms. Rivera by Friday. The cost is $12 per student, payable with the slip.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Thank you|CONTENT: Dear Aunt Rose, thank you so much for the sweater you sent for my birthday. It fits perfectly and I wore it to dinner last night. I hope you're doing well, and I'll call you this weekend.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Garage sale this Saturday|CONTENT: Hi neighbors, we're holding a garage sale at 42 Pine Court this Saturday from 9 to 2. We have bikes, kids' toys, and a few kitchen items. Feel free to stop by and bring a friend.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Meeting moved to 3pm|CONTENT: Team, the project status meeting has been moved from 2 to 3 p.m. in Conference Room B. Please update your calendars and bring your Q2 numbers. Thanks, Sara Kim",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Vet appointment|CONTENT: Hi Mr. Lopez, this is a reminder that Biscuit's annual checkup is scheduled for Tuesday at 10:15 a.m. at Riverside Animal Clinic. Please bring his vaccination card. Call us at 555-0175 if you need to reschedule.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Carpool for Friday|CONTENT: Hi Donna, can you pick up Eli and his friend from practice on Friday? I have a late meeting downtown. I'll owe you one, and I can take them Monday instead.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Gym membership change|CONTENT: Hello Jordan, your Fitness First membership has been upgraded to the family plan effective June 1. Your new monthly rate is $64. Please stop by the front desk to pick up your updated card.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Recipe you asked for|CONTENT: Hi Melissa, here's the lemon chicken recipe I mentioned at lunch. I usually marinate it for two hours and bake at 375 degrees. Let me know how it turns out!",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Maintenance visit Thursday|CONTENT: Dear tenant, a plumber will be stopping by Unit 3B on Thursday between 9 and 11 a.m. to fix the kitchen faucet. Please make sure the sink area is clear. Thank you for your patience.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Quick question about the flyer|CONTENT: Hi Ben, do you still have the PDF of the spring fundraiser flyer? I need to print copies for the library bulletin board by Monday. You can send it to me at dana.wells@example.org.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Reunion planning|CONTENT: Hi class of 2008, we're planning our 15-year reunion for August 16 at the Lakeview Hall. Tickets are $35 and can be paid at the door or through the link on our page. Please RSVP by July 20.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Happy anniversary|CONTENT: Dear Tom and Ann, congratulations on 25 years together! We'd love to celebrate with you on Saturday at our house. Dinner starts at 7, and we'll bring the dessert. Let us know if you need a ride.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Lease renewal offer|CONTENT: Dear Mr. Nguyen, your lease at Willow Creek Apartments ends on August 31. We are offering a 12-month renewal at $1,520 per month. Please sign and return the enclosed form by July 15.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Library book due|CONTENT: Hi, this is a courtesy reminder from Westside Public Library that your book 'River of Stars' is due on May 22. You can renew it online or by calling 555-0199.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Sorry I missed you|CONTENT: Hey Sam, I stopped by your place but you weren't home. Could you text me when you're free this week? I have the concert tickets and want to make sure we're still on for Friday.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Snow day plans|CONTENT: Mom, the school district announced a snow day for tomorrow. I'm going to sleep in and then help shovel the driveway. Can you let Grandpa know I'll come by for lunch on Wednesday instead?",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Team lunch order|CONTENT: Hi all, we're ordering lunch from Garden Bowl at noon on Thursday for the quarterly review. Please reply with your choice by Wednesday afternoon so I can place the order. Thanks, Priya",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Payment received|CONTENT: Dear Mr. Owens, we have received your payment of $89.50 for your March utility bill. Your account is now current. Thank you for choosing Lakeside Water Services.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Piano lessons|CONTENT: Hi Mrs. Hall, Lily's lesson will be moved from Wednesday to Thursday at 5 p.m. this week because I'm out of town. Please let me know if that causes any problems. Thanks, Michelle",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Bike shop pickup|CONTENT: Hi Alex, your bike is ready for pickup at Spokes and Gears on Main Street. The new chain and tune-up came to $58. We are open until 6 p.m. weekdays and until 4 p.m. on Saturdays.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Recommendation for my nephew|CONTENT: Dear Professor Hayes, my nephew Marcus is applying for the summer internship program at your lab. He is hardworking and curious, and I believe he would be a great fit. Would you be willing to speak with him briefly?",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Flu shot clinic|CONTENT: Dear parents, the school nurse will host a free flu shot clinic in the gym on October 3 from 8 to 11 a.m. Please return the consent form to the main office before September 28.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Visiting next month|CONTENT: Hi Dad, I booked my flight for the 14th and I land at 4:20 p.m. on Friday. Could you pick me up from the airport? I'm looking forward to seeing you and the new garden.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Water heater update|CONTENT: Hi Ms. Foster, the repair crew replaced the water heater in your building yesterday. Hot water should be back within two hours. If it isn't, please call the office at 555-0121.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Can you cover my shift?|CONTENT: Hey Jamie, something came up and I can't work my Saturday shift at the cafe. Would you be able to swap with me for Sunday? I'll take any evening shift next week to make it up.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Scholarship deadline|CONTENT: Dear Maya, this is a reminder that the Harper Community Scholarship application closes on March 15. Please upload your transcript and essay through the online portal. Good luck, and let me know if you have questions.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Pool closing date|CONTENT: Hello residents, the community pool will close for the season on Labor Day at 6 p.m. Please remember to return your pool key to the management office. Thank you for a great summer!",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Congrats on the new job|CONTENT: Hi Erin, I just heard about the marketing position at Brightline Media. That's fantastic news! Let's grab coffee next week so you can tell me everything about it.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your order has shipped|CONTENT: Hello Mr. Ward, your order #88215 from Harbor Home Goods has shipped and should arrive by Thursday. You can track the package using the link in your account. Thanks for shopping with us.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Lunch on Tuesday?|CONTENT: Hi Ruth, I'm in your part of town on Tuesday for a meeting. Are you free for lunch around noon? I'm happy to go to whichever place you like best.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Community cleanup day|CONTENT: Neighbors, our street cleanup is Saturday at 9 a.m. Meet at the corner of Birch and 5th. Gloves and bags will be provided. Please bring your own water and wear closed-toe shoes.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Dentist reminder|CONTENT: Hi Olivia, this is a reminder that your cleaning is scheduled for Monday at 2:30 p.m. with Dr. Lin at Bright Smile Dental. If you need to change the time, please call 555-0166 at least 24 hours in advance.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Kids' birthday party|CONTENT: Hi Carla, Noah is turning seven on Saturday, and we'd love for Mia to come to his party at the trampoline park from 1 to 3 p.m. Please RSVP by Thursday so I can book enough jump passes. Thanks!",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Tax documents|CONTENT: Hi Greg, I finished organizing the receipts for last year's taxes. Could you send me your 1099 forms by the end of the week? I want to get everything to the accountant before the April deadline.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Office closing for holiday|CONTENT: Dear staff, the office will be closed on Monday, May 27 in observance of Memorial Day. Regular hours resume Tuesday at 8 a.m. Please plan any urgent deliveries in advance.",
+    "category": "work_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Garden plot assignment|CONTENT: Hi Frank, your garden plot at Greenfield Community Garden is now plot 14, next to the tool shed. Please pick up your key from the coordinator, Lisa, on Sunday morning. Happy planting!",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Concert tickets|CONTENT: Hey Nate, I got two tickets for the Saturday show at the Civic Theater. They're in row F, seats 9 and 10. Want to split the cost? It's $48 total, so you owe me $24 whenever is convenient.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Heating system inspection|CONTENT: Dear homeowner, our technician will arrive on Tuesday between 8 and noon for your annual furnace inspection. Please make sure the area around the unit is accessible. Call 555-0139 with any questions.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Thanks for the ride|CONTENT: Hi Ray, thanks so much for driving me to the airport this morning. I really appreciated it. I owe you a dinner, so let me know which night works for you next week.",
+    "category": "personal_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Q3 Budget Review. Date: Tuesday, October 14, 2025. Time: 10:00 to 11:00 AM. Location: Conference Room B, 2nd floor, Halvorsen Logistics, 420 Mill Street. Attendees: Dana Whitfield (dana.whitfield@halvorsen-log.example), Omar Reyes, Priya Nandakumar. Description: Please review the draft spreadsheet before we meet. Bring a printed copy if you prefer paper. Send any corrections to Dana by Monday evening.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Kitchen Renovation Walkthrough. Date: Thursday, March 6, 2025. Time: 2:30 PM. Location: 18 Cedar Lane, Unit A. Attendees: Marcus Bell, Ilse Tanaka, contractor Joe Feeney (555-0142). Description: Meet at the side gate, the front door is being repainted. Wear closed-toe shoes because the subfloor is uneven in the pantry area.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Intro Call with Brightwater Foods. Date: Monday, June 2, 2025. Time: 9:15 to 9:45 AM Eastern. Location: Video call, link sent separately. Attendees: Leah Sorensen (Brightwater), Kwame Asante, Rosa Diaz. Description: Leah asked for a short overview of our cold-chain services. Kwame will cover pricing; Rosa will take notes.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Team Lunch and Retro. Date: Friday, May 9, 2025. Time: 12:00 to 1:30 PM. Location: Lantern Thai Kitchen, 77 Harbor Ave. Attendees: the Platform team. Description: Lunch is on the team card this time. Please let Hana know about dietary needs by Wednesday so the table is ready.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Dentist Appointment Reminder. Date: Wednesday, April 16, 2025. Time: 8:40 AM. Location: Riverside Dental Group, Suite 204, 1190 Oak Park Road. Attendees: Sam Okafor. Description: Arrive ten minutes early to finish the intake form. Bring your insurance card, which is Aetna plan 88214-07, and a photo ID.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Board Prep Session. Date: Sunday, January 19, 2025. Time: 4:00 to 5:30 PM. Location: Ferncliff Community Center, Room 3. Attendees: Board members of the Ferncliff Garden Club. Description: Please read the minutes from December before arriving. Treasurer Gail Mendez will bring the year-end report. Parking is available behind the building.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Client Onboarding Kickoff. Date: Tuesday, September 3, 2025. Time: 11:00 AM to 12:00 PM. Location: Zenith Analytics HQ, Meeting Room Juniper. Attendees: Carla Jimenez (carla.j@zenithanalytics.example), Tobias Lind, Ana Petrova. Description: Carla will share access credentials for the shared drive during the session. Bring a list of your current reporting tools so we can map them.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Volunteer Orientation. Date: Saturday, February 8, 2025. Time: 9:00 AM. Location: Eastside Food Pantry, loading dock entrance on Birch Street. Attendees: New volunteers from the spring cohort. Description: Plan for about ninety minutes. Gloves and aprons are provided. Please sign the waiver at the front table when you arrive.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Sprint Planning. Date: Monday, July 21, 2025. Time: 10:30 AM to 11:30 AM. Location: Video call, room Delta-7. Attendees: Engineering squad Blue. Description: Review the backlog items tagged for next sprint before the call. Raj will demo the new export feature, so please have questions ready.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Parent-Teacher Conference. Date: Thursday, November 13, 2025. Time: 3:45 PM. Location: Room 118, Maple Grove Elementary. Attendees: Ms. Helen Carrow, Mr. and Mrs. Iyer. Description: Conferences run about twenty minutes. Please bring any questions about reading progress. The school office number is 555-0198 if you need to reschedule.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Vendor Site Visit. Date: Wednesday, August 27, 2025. Time: 1:00 to 3:00 PM. Location: Pinecrest Packaging Plant, 900 Industrial Way, Gate C. Attendees: Mateo Ruiz, Julia Park, plant manager Ed Holloway. Description: Safety glasses and steel-toed boots are required on the floor. Check in at the guard shack and ask for Ed.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Book Club: Winter Selection. Date: Sunday, December 7, 2025. Time: 6:30 PM. Location: Margaret's apartment, 33 Larkspur Court, apartment 5B. Attendees: Book club members. Description: This month we are discussing the novel about the lighthouse keeper. Bring a dish to share if you can. Please RSVP to margaret.lowe@mail.example.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Hiring Panel Interview. Date: Tuesday, October 28, 2025. Time: 2:00 PM. Location: Building 4, Interview Room 2. Attendees: Gabriela Torres, Noah Feld, candidate Simone Achebe. Description: Gabriela will lead the technical questions. Noah, please bring the scoring rubric. Candidate arrives at 1:50 PM at the lobby desk.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Pottery Class Session Four. Date: Saturday, April 12, 2025. Time: 10:00 AM to 12:30 PM. Location: Clayworks Studio, 5 Kiln Row. Attendees: Beginner pottery group. Description: We will practice trimming leather-hard pieces. Aprons are on the hooks by the door. Please bring your sketch notebook if you want to plan your next bowl.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Quarterly Safety Walk. Date: Thursday, June 26, 2025. Time: 8:00 to 9:00 AM. Location: Warehouse East, Dock 6 entrance. Attendees: Facilities staff, Lorenzo Gil, Pat Dunmore. Description: Walk the aisles and note any blocked exits. Report findings in the shared checklist by Friday noon.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Investor Update Call. Date: Wednesday, January 29, 2025. Time: 4:30 PM Pacific. Location: Dial-in number 555-0177, passcode 40219. Attendees: Founders and lead investors. Description: The deck will be sent by Monday morning. Please hold questions until the Q&A section at the end of the call.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Community Garden Work Day. Date: Saturday, May 17, 2025. Time: 8:30 AM to noon. Location: Hillcrest Community Garden, gate off Sycamore Drive. Attendees: Garden members. Description: We need help rebuilding the raised beds on the north side. Bring a shovel and gloves if you have them. Coffee will be on the picnic table.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Moving Day Coordination. Date: Friday, August 1, 2025. Time: 7:00 AM. Location: 62 Ashford Terrace, then 14 Newport Lane. Attendees: Ruth Kim, Eddie Lamar, movers from Swift Haul (dispatch 555-0163). Description: Truck arrives at 7:15. Ruth will have the keys to both units. Label boxes by room so the crew can place them quickly.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Engineering Demo Day. Date: Thursday, September 18, 2025. Time: 3:00 to 4:00 PM. Location: Auditorium on Level 1. Attendees: All engineering staff. Description: Each team gets five minutes to show a finished feature. Please upload your slides to the shared folder by Wednesday at 5 PM. Snacks will be served after.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Physical Therapy Follow-up. Date: Monday, March 24, 2025. Time: 11:15 AM. Location: Northgate Rehab Clinic, Suite 110. Attendees: Lydia Brandt. Description: Wear comfortable clothes that allow movement at the knee. Bring your exercise log from the past two weeks. Arrive ten minutes early for check-in.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Marketing Brainstorm. Date: Tuesday, February 25, 2025. Time: 1:30 to 2:30 PM. Location: Studio 3, Crescent Building. Attendees: Jonah Pierce, Mei Lin, Sofia Benedetti. Description: We are looking at ideas for the spring campaign. Bring two concepts, rough is fine. Whiteboard markers are in the cabinet.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Neighborhood Watch Meeting. Date: Wednesday, October 1, 2025. Time: 7:00 PM. Location: St. Brendan's Parish Hall, lower level. Attendees: Residents of Elm and Fulton streets. Description: Officer Dana Kroll will talk about recent package thefts. Please bring your contact info for the phone tree. Refreshments provided.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Lab Safety Training. Date: Monday, April 7, 2025. Time: 9:00 to 10:30 AM. Location: Chemistry Lab 201, Westfield University. Attendees: New graduate students. Description: Lab coats and goggles are mandatory from the start. Sign the attendance sheet at the door. Bring your student ID for the badge check.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Family Reunion Planning. Date: Sunday, June 8, 2025. Time: 2:00 PM. Location: Aunt Lou's backyard, 209 Willow Creek Road. Attendees: Okonkwo family organizers. Description: We need to finalize the guest list and the rental quote for tables. Cousin Tunde will bring the printed family tree. Please confirm attendance numbers with Lou at 555-0134.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Accounting Close Meeting. Date: Friday, July 4, 2025. Time: 10:00 AM. Location: Finance Room 5. Attendees: Controllers and AP team. Description: The office is closed for the holiday, so join by phone at 555-0190. Have your reconciliations completed by Thursday. Ask Helen if the bank statements are missing.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Trail Maintenance Crew. Date: Saturday, October 4, 2025. Time: 7:30 AM. Location: Lookout Trailhead parking lot, Ridgeway Park. Attendees: Trail crew volunteers. Description: We will clear fallen branches from the lower loop. Bring water, sturdy boots, and a pair of work gloves. Lunch is provided at the picnic shelter.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Product Launch Rehearsal. Date: Wednesday, November 5, 2025. Time: 4:00 to 5:00 PM. Location: Main stage, Harborview Event Center. Attendees: Presenters, AV crew, Imani Carter. Description: Run through the opening segment twice. Audio check starts at 3:30 PM. Please wear the black polo provided in your welcome kit.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Architecture Review. Date: Tuesday, May 13, 2025. Time: 11:30 AM to 12:30 PM. Location: Room Cobalt, 3rd floor. Attendees: Platform architects, Yusuf Demir, Clara Holm. Description: We will review the proposed caching layer. Please read the design doc ahead and add comments directly in the margin. Sandwiches will be ordered for 12:00.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: School Science Fair Setup. Date: Thursday, March 13, 2025. Time: 3:30 PM. Location: Gymnasium, Lincoln Middle School. Attendees: Science teachers and student volunteers. Description: Tables need to be set up by 3:30. Students should bring their display boards and labeled samples. Ms. Ortega will hand out name tags at the door.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Church Choir Rehearsal. Date: Wednesday, December 17, 2025. Time: 7:00 to 8:30 PM. Location: Sanctuary, Grace Lutheran Church, 88 Quarry Road. Attendees: Choir members. Description: We will run the holiday program twice. Please bring your folder with the sheet music. Alto section, stay after for a short sectional with Mark.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Freight Scheduling Call. Date: Monday, September 8, 2025. Time: 8:00 AM Central. Location: Phone, dial 555-0121. Attendees: Carrier liaison Ben Adair, dispatcher Lena Ortiz. Description: Confirm the three truckloads for the Denver route. Ben will send updated bills of lading after the call. Please check the dock availability for Thursday.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Art Gallery Opening Prep. Date: Friday, October 10, 2025. Time: 9:00 AM. Location: Lumen Gallery, 14 Gaslight Avenue. Attendees: Curator Anja Weiss, installers, caterer representative. Description: Hanging starts at 9:00 and should finish by noon. Please keep the protective gloves on when handling frames. Catering delivery arrives at 4:00 PM at the loading door.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Cybersecurity Tabletop Exercise. Date: Thursday, April 24, 2025. Time: 1:00 to 3:00 PM. Location: Operations Center, Room 7. Attendees: IT leads, Legal counsel Martine Oyelaran, Communications head Peter Quist. Description: We will walk through a simulated phishing incident. Review the incident response checklist beforehand. Bring your laptop so you can access the runbook.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Language Exchange Evening. Date: Saturday, June 14, 2025. Time: 6:00 PM. Location: Café Lumière, 52 Rue Patton (back room). Attendees: Members of the Riverside Language Circle. Description: Switch languages every thirty minutes. Name tags will be ready at the front. Please order your own drinks, and tip the staff if you enjoy the evening.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Warehouse Inventory Count. Date: Tuesday, December 30, 2025. Time: 6:00 AM. Location: Distribution Center 2, Aisles 10 through 24. Attendees: Night shift leads and count team. Description: Scanners are charged at the cage. Count all pallets in your zone and log discrepancies on the yellow sheet. Breaks are at 9:00 and 1:00.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Hackathon Kickoff. Date: Friday, February 14, 2025. Time: 5:00 PM. Location: Innovation Hub, Floor 2, Room Atlas. Attendees: Registered participants. Description: Teams must be formed by 5:30. Pizza is served at 6:00. Please bring your own charger. Submissions are due Sunday at 3 PM through the portal.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Wedding Venue Walkthrough. Date: Sunday, July 13, 2025. Time: 11:00 AM. Location: Silverleaf Barn, 410 County Road 9. Attendees: Bride Chloe Martens, groom Felix Adair, venue coordinator Ines Rahal. Description: We will check the lighting and the head table layout. Bring the seating chart draft. Parking is on the grass field to the east.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Staff Training on Customer Refunds. Date: Wednesday, March 19, 2025. Time: 10:00 to 11:00 AM. Location: Training Room, Store 14. Attendees: Cashiers and floor supervisors. Description: We are updating the refund policy effective April 1. Read the one-page summary that will be emailed to you today. Questions go to supervisor Tom Varga.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Grant Writing Workshop. Date: Monday, October 20, 2025. Time: 2:00 to 4:00 PM. Location: Community Learning Center, Room 102. Attendees: Nonprofit staff from the Eastbrook coalition. Description: Bring a one-page summary of your current project. Facilitator Renee Costa will review sample budgets. Coffee and tea will be available in the hallway.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Dog Training Class Week Three. Date: Saturday, September 27, 2025. Time: 9:30 AM. Location: Paws and Practice Center, outdoor ring B. Attendees: Class of Saturday beginners. Description: Bring high-value treats and a six-foot leash. We will work on recall and loose-leash walking. Please keep dogs on leash until instructed.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Solar Panel Installation Check. Date: Thursday, August 14, 2025. Time: 8:00 AM. Location: 27 Juniper Hill Road, rooftop access via the rear ladder. Attendees: Installer lead Carlos Vidal, homeowner Greg Hollis. Description: Crew will need access to the garage breaker panel. Please move the car out of the driveway by 7:45. Inspector arrives at 1:00 PM.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Annual Scholarship Committee. Date: Tuesday, April 1, 2025. Time: 5:00 to 6:30 PM. Location: Board Room, Fairmont Foundation, 600 Summit Blvd. Attendees: Committee members Deborah Yang, Felix Ruiz, Nadia Hassan. Description: Applications are due April 15. Please score your assigned files in the spreadsheet before the meeting. Dinner will be served at the start.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Podcast Recording Session. Date: Monday, May 26, 2025. Time: 3:00 PM. Location: Studio B, Sound Harbor Media, 9 Tanner Street. Attendees: Host Kirsten Vale, guest Dr. Amit Shah. Description: Please arrive with your talking points printed. The recording will run about 50 minutes. Mute your phone and turn off notifications for the session.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Facilities Maintenance Window. Date: Saturday, November 8, 2025. Time: 6:00 AM to 10:00 AM. Location: Data Center Annex, Rack Row C. Attendees: On-call engineers, facilities lead Hector Ruiz. Description: Power will be switched to the backup generator at 6:30. Please confirm all critical services failover before 6:15. Call Hector at 555-0148 if an issue arises.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Cooking Class: Fresh Pasta. Date: Sunday, March 2, 2025. Time: 11:00 AM to 1:30 PM. Location: The Flour Mill Kitchen, 3 Canal Street. Attendees: Class registrants. Description: Wear an apron and tie back long hair. We will make tagliatelle from scratch. Please bring a container if you want to take home leftover dough.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Startup Pitch Practice. Date: Thursday, October 2, 2025. Time: 6:00 PM. Location: Coworking Space, Room Maple, 2nd floor. Attendees: Founders from cohort six, mentor Lila Ferrante. Description: Each team has eight minutes to present plus five for feedback. Time yourselves before arriving. Send your final deck to Lila by Wednesday night.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Bridge Inspection Briefing. Date: Wednesday, June 18, 2025. Time: 7:30 AM. Location: Eastgate Bridge, north approach staging area. Attendees: Inspection crew, county engineer Simone Okoro. Description: Hard hats and high-visibility vests are required. Lane closures begin at 8:00 AM. Radio channel 4 will be used during the inspection.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Birthday Party Planning. Date: Saturday, April 26, 2025. Time: 1:00 PM. Location: Mia's house, 71 Hollow Oak Drive. Attendees: Parents from Mia's class. Description: We need volunteers for games and cake. Please bring a small gift for the goody bags if you can. The party ends at 3:30, so pickup is at that time.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Supplier Quality Audit. Date: Tuesday, July 29, 2025. Time: 9:00 AM to 4:00 PM. Location: Acme Components Plant, Building 2, Quality Lab. Attendees: Auditor Ruth Haddad, plant QA manager Stefan Eriksen. Description: The audit covers incoming inspection records from the last quarter. Please have sample logs and calibration certificates ready. Lunch is at noon in the cafeteria.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Title: Yoga and Mindfulness Session. Date: Monday, January 6, 2025. Time: 6:15 to 7:15 AM. Location: Studio 12, Lakeside Wellness Center. Attendees: Morning class members. Description: Bring your own mat or rent one at the desk for five dollars. Please silence your phone before class. Instructor Anya Brooks will offer modifications for knee injuries.",
+    "category": "calendar_event",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-03-01. Amount: 850.00 EUR. Recipient: Lindqvist Property Management. IBAN: DE00 1234 5678 9012 3456 78. Memo: Rent for March, apartment 4B, Elm Street.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled payment set up on 2024-02-10 for 42.15 USD to Brightwater Electric Co. Account: US00 0000 1111 2222 3333. Memo: February electricity bill, account ending 3317.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer on 15 January 2024 of 1,200.00 GBP to Harold and Jane Whitcombe. Sort code 20-00-00, account GB00 TEST 0000 4455 66. Memo: Please pay the remaining balance by the 15th.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-05-22. Amount: 64.90 EUR. Payee: Fjordline Mobile GmbH. IBAN: DE11 2200 3300 4400 5500 66. Memo: May phone plan, invoice 88213.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment due 2024-06-30. Amount: 310.00 CHF. Recipient: Alpenhof Dental Clinic. IBAN: CH00 0000 0123 4567 8901 2. Memo: Dental cleaning and checkup, Dr. Rueegg.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-04-05 we sent 75.00 EUR to Marta Kowalczyk for the spring soccer league fees. IBAN: PL00 1234 0000 0000 1234 5678. Memo: Spring league fees for Tomek, thanks!",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Standing order created 2024-01-02. Amount: 25.00 EUR monthly. Recipient: Greenleaf Community Garden. IBAN: NL00 TEST 0123 4567 89. Memo: Monthly membership, plot 12.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date 2024-07-08. Amount 2,450.00 USD. Recipient: Caldwell & Sons Roofing LLC. Routing 000000000, account 1234567890. Memo: Deposit for roof repair, balance due on completion. Call Dana at 555-0142 with questions.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transaction date: 2024-03-18. Amount: 18.40 EUR. Recipient: Bakery Lindenhof. IBAN: AT00 0000 0000 1234 5678. Memo: Birthday cake pickup, order 4471.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment on 2024-09-01 for 540.00 EUR to Stadtwerke Nordheim. IBAN: DE22 0000 0000 0000 9876 54. Memo: Water and waste fees, customer number 77120.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-02-28. Amount: 99.00 SEK. Recipient: Sunnyvale Gym AB. IBAN: SE00 0000 0000 0000 0123 4567. Memo: Membership renewal for March, card holder Anna Berg.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-11-12 transfer 3,000.00 EUR to Ruben Alvarez for the used car. IBAN: ES00 0000 0000 0000 1122 3344. Memo: Final payment for the Golf, as agreed. Title papers will be signed on the 14th.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled for 2024-06-01. Amount: 120.00 EUR. Payee: Pinecrest Academy. IBAN: IT00 X000 0000 0000 0000 1234 567. Memo: Summer camp deposit for Lucia, second half due in July.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-08-19. Amount: 36.75 GBP. Recipient: Crumble and Co Catering. Sort code 40-00-00, account GB00 TEST 0000 7788 99. Memo: Office lunch order for Thursday meeting, eight people.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment processed 2024-04-30. Amount: 500.00 EUR. Recipient: Hollander Insurance Group. IBAN: NL00 TEST 9876 5432 10. Memo: Home insurance premium, policy HI-554021, second installment.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer 2024-10-03 of 15.00 EUR to Pieter van Dam. IBAN: BE00 0000 0000 0097. Memo: Half of the pizza and drinks from Friday, thanks for ordering.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-01-15. Amount: 1,075.50 USD. Recipient: Oakridge Veterinary Hospital. Routing 000000000, account 9988776655. Memo: Surgery follow-up for Biscuit the cat. Please pay the remaining balance by the 15th of February.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled 2024-03-25. Amount: 200.00 EUR. Recipient: Verde Solar Solutions. IBAN: DE33 0000 0000 0000 4455 66. Memo: Second milestone payment, panel installation phase two, invoice VS-1190.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment dated 2024-12-01. Amount: 45.00 EUR. Recipient: Cantina Pomodoro. IBAN: IT00 Y000 0000 0000 0000 9988 776. Memo: Christmas party deposit for table of six.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-05-06 we paid 88.20 EUR to the Riverside Tennis Club. IBAN: AT00 0000 0000 9988 7766. Memo: Court rental for May, Saturday mornings, thanks for the reminder.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-07-01. Amount: 1,650.00 EUR. Recipient: Hartmann Accounting GmbH. IBAN: DE44 0000 0000 0000 3322 11. Memo: Quarterly tax advisory fee, Q2 2024. Receipt will be emailed to office@hartmann-example.de.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer of 60.00 GBP on 2024-02-14 to Sophie Grant. Sort code 60-00-00, account GB00 TEST 0000 2233 44. Memo: Valentine flowers split, my half.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment date: 2024-09-15. Amount: 230.00 EUR. Recipient: Waldner Heating Services. IBAN: DE55 0000 0000 0000 6677 88. Memo: Boiler service visit, unit 2, please confirm the appointment time.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-06-10 a payment of 12.99 USD was scheduled for Pixelmart Streaming Inc. Account 5566778899. Memo: Monthly subscription, family plan, billed to card ending 4021.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-04-12. Amount: 400.00 EUR. Recipient: Kinderhaus Sonnenschein e.V. IBAN: DE66 0000 0000 0000 1100 22. Memo: April childcare fees for Mia, late pickup fee included.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer 2024-08-30 of 2,100.00 EUR to Ferraro Moving Srl. IBAN: IT00 Z000 0000 0000 0012 3456 789. Memo: Moving services deposit, move date 14 September, flat on Via Roma.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date 2024-10-20. Amount: 49.00 EUR. Recipient: Library Friends of Brenner. IBAN: AT00 0000 0000 5544 3322. Memo: Annual donation to the book fund, thank you for the tote bag.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled payment on 2024-01-31. Amount: 678.90 EUR. Recipient: Nordic Energy Supply. IBAN: NO00 0000 0000 000. Memo: January gas bill, meter reading attached in the portal, account 3340981.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-03-08 we transferred 150.00 EUR to Elena Rossi. IBAN: IT00 A000 0000 0000 0098 7654 321. Memo: Reimbursement for train tickets to Florence, receipts forwarded by email.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-11-05. Amount: 92.30 USD. Recipient: Maple Street Plumbing. Routing 000000000, account 4433221100. Memo: Kitchen sink repair, parts and labor, invoice 1182.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment set for 2024-06-20. Amount: 275.00 EUR. Recipient: Stadtbibliothek Lindau. IBAN: DE77 0000 0000 0000 2468 10. Memo: Annual fee for music library access, family card.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer on 2024-05-27 of 35.00 EUR to Jonas Weber. IBAN: DE88 0000 0000 0000 1357 90. Memo: Concert tickets for Saturday, seats 14 and 15, meet at the north gate.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-02-02. Amount: 520.00 GBP. Recipient: Brightside Nursery Ltd. Sort code 30-00-00, account GB00 TEST 0000 6655 44. Memo: February nursery fees for Oliver, please pay the remaining balance by the 5th.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled for 2024-09-10. Amount: 1,200.00 EUR. Recipient: Hauser Architekten. IBAN: AT00 0000 0000 7788 9900. Memo: Planning phase invoice, kitchen extension, drawings delivered on 3 September.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment 2024-07-25 for 18.00 EUR to Chen Noodle House. IBAN: NL00 TEST 1122 3344 55. Memo: Takeaway order for Friday evening, delivered to 22 Canal Lane.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-04-18. Amount: 340.00 CHF. Recipient: Schneider Fitness Coaching. IBAN: CH00 0000 0765 4321 0987 6. Memo: Six personal training sessions, package B, sessions booked through April.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer dated 2024-12-22. Amount: 800.00 EUR. Recipient: Lena Hoffmann. IBAN: DE99 0000 0000 0000 8800 77. Memo: Holiday cottage deposit, balance due before arrival on 28 December.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-08-08 we paid 29.95 EUR to Bluebird Books Online. IBAN: DE12 0000 0000 0000 4321 98. Memo: Order 55091, two paperback novels, shipping included.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-03-29. Amount: 1,890.00 USD. Recipient: Northgate Property Holdings. Routing 000000000, account 7766554433. Memo: Office lease, April installment, suite 210.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled 2024-10-01. Amount: 60.00 EUR monthly. Recipient: Musikschule Harmonie. IBAN: DE34 0000 0000 0000 5566 77. Memo: Piano lessons for Felix, October fee.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment on 2024-06-05 of 512.40 EUR to Ostsee Reisen GmbH. IBAN: DE56 0000 0000 0000 9911 22. Memo: Balance for group trip to Rügen, booking reference OR-7710. Final payment is due by the 15th.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-01-22. Amount: 85.00 EUR. Recipient: Gemeinde Rathaus Kasse. IBAN: DE20 0000 0000 0000 3344 55. Memo: Parking permit renewal for Hauptstraße, vehicle plate on file.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer 2024-09-28 of 250.00 EUR to Carla Mendes. IBAN: PT00 0000 0000 0000 0000 0000 0. Memo: Share of the apartment cleaning costs for September, thanks for handling the booking.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date 2024-05-14. Amount: 74.50 GBP. Recipient: Riverbank Water Board. Sort code 10-00-00, account GB00 TEST 0000 1212 34. Memo: Quarterly water charge, reference 445-209, paid on time.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled payment 2024-02-29 for 3,300.00 EUR to Bauer Immobilien. IBAN: DE61 0000 0000 0000 7788 00. Memo: Deposit for the flat at Kastanienweg 9, keys collected at the office on 1 March.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-10-30. Amount: 22.10 EUR. Recipient: Dr. Felix Brandt Pharmacy. IBAN: DE70 0000 0000 0000 2233 44. Memo: Prescription copay, receipt 9981, pickup in store.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-07-19 a transfer of 415.00 EUR went to Osterholz Carpentry. IBAN: DE81 0000 0000 0000 6655 33. Memo: Built-in wardrobe, first installment, measurements confirmed on site.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment dated 2024-11-18. Amount: 105.00 USD. Recipient: Sunrise Yoga Studio LLC. Routing 000000000, account 1020304050. Memo: Monthly unlimited pass, November, auto-renewal on the 18th.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-06-26. Amount: 3,600.00 EUR. Recipient: Vogt Logistik KG. IBAN: DE90 0000 0000 0000 4477 11. Memo: Freight invoice for May shipment, pallets 1 through 8, please pay within 14 days.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Transfer 2024-04-02 of 60.00 EUR to Anneliese Braun. IBAN: DE02 0000 0000 0000 9988 00. Memo: Your share of the garden supplies, see you at the spring work day.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scheduled for 2024-08-15. Amount: 1,020.00 EUR. Recipient: Hafen Versicherung AG. IBAN: DE13 0000 0000 0000 1122 00. Memo: Car insurance annual premium, policy 4412-B, direct debit confirmed.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date: 2024-12-05. Amount: 14.00 GBP. Recipient: Hilltop Dog Walkers. Sort code 05-00-00, account GB00 TEST 0000 5511 22. Memo: Walk for Max on Thursday, thank you, Priya.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "On 2024-09-03 we sent 540.00 EUR to Müller Elektro GmbH. IBAN: DE24 0000 0000 0000 3399 88. Memo: Kitchen wiring, final invoice, electrician will return on the 10th for inspection.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Payment 2024-10-12 of 130.00 EUR to Kunsthalle Friedrichsau. IBAN: DE35 0000 0000 0000 7711 22. Memo: Membership renewal and guided tour booking for two, tour starts 11:00.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Date 2024-03-01. Amount: 660.00 EUR. Recipient: Oberhofer Hausverwaltung. IBAN: AT00 0000 0000 1357 2468. Memo: Monthly rent for Flat 7, March, including utilities advance. Please pay the remaining balance by the 15th if any extra fees arise.",
+    "category": "bank_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Meeting minutes, March 4: Dana to send the revised budget to finance by Friday. Ravi will book the conference room for the April review. Please reply to dana.whitfield@brightpath.example if you cannot attend.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Landlord notice: The water to Unit 3B will be shut off on Tuesday, May 12, from 9:00 a.m. to 1:00 p.m. for pipe repairs. Tenants should store enough water for the afternoon. Questions can go to maintenance at 555-0142.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Project plan, Phase 2: Marcus owns the vendor contract review and should finish it by June 3. Priya will coordinate the QA schedule with the testing team. Weekly status updates are due every Monday at noon.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Office move checklist: Pack all desk drawers and label boxes with your floor number. IT will disconnect workstations on Thursday after 4 p.m. Put personal plants in the lobby bin, not the moving truck.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Parent-teacher association minutes: Treasurer Lena Ortiz will collect the spring fundraiser receipts by April 20. Volunteers for the bake sale should sign up on the clipboard in the front office. The next meeting is in the library at 7 p.m.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Lease reminder: Rent of $1,450 is due on the first of each month. Late payments after the fifth incur a $75 fee. Please update your renter's insurance certificate with the management office by July 1.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Sprint retrospective notes: Tomas will split the login ticket into two smaller tasks. Helen to review the deployment checklist before Wednesday's release. Everyone should log time in the tracker by end of day.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Community garden update: Plot holders must remove dead plants from their beds by October 15. Mei Lin will organize a compost pickup on Saturday morning. Keys for the shed can be picked up from Gareth at the gate.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Board meeting action items: Treasurer to circulate the audited statements within ten business days. Director Okafor to confirm the venue for the annual gala. Minutes from this meeting will be approved at the next session.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Warehouse safety notice: Forklift inspections are scheduled for the week of September 8. Operators must sign the logbook before starting their shift. Report any damaged pallets to supervisor Ben Carlisle at extension 4410.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Event planning email: Sofia will book the catering for 120 guests by August 1. Jamal to confirm the speaker's travel itinerary. Please send dietary restrictions to events@lakeviewhotel.example by July 25.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Hiring committee notes: Interviews for the analyst role are set for May 6 and 7. Each panelist should submit a written scorecard within 24 hours. Recruiter Kim Duvall will send calendar invites today.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Building maintenance notice: The elevator in the north wing will be out of service on Monday for inspection. Please use the stairs or the east elevator. Contact the front desk at 555-0198 with any urgent issues.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Research lab schedule: Dr. Alvarez needs all centrifuge logs uploaded to the shared drive by Friday. Graduate students should rotate the autoclave duty roster this week. Wear goggles at all times in Room 214.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Neighborhood association minutes: Residents are reminded that recycling pickup moves to Wednesdays starting in June. Oscar Lindqvist will repaint the crosswalk sign on Elm Street. Dues of $40 can be paid to the secretary by mail.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Quarterly sales review: Each regional manager should submit pipeline forecasts by the 10th. Aisha will update the territory map in the CRM. Please flag any deals over $50,000 to the VP of sales before the review call.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "School field trip permission reminder: Forms must be returned to Ms. Patel by Thursday, November 2. Students need a packed lunch and a water bottle. Chaperones should arrive at the front entrance at 7:45 a.m.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Construction site update: Crane operations pause on Saturday for scheduled maintenance. Subcontractors must submit updated insurance certificates to the site office by Friday. Hard hats are required in all zones.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Library committee notes: Volunteers are needed to shelve returns on Tuesday evenings. Naomi will order the new large-print titles this month. Overdue notices will be mailed on the first of each month.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Finance department memo: Expense reports for Q3 are due by October 5. Attach itemized receipts for any charge over $25. Questions can be directed to Priscilla at priscilla.rhodes@northfield.example.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Training session summary: Participants should complete the online safety module before the workshop on May 20. Facilitator Tom Nakamura will share slides after the session. Bring a laptop with the latest browser installed.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Apartment complex notice: Parking lot B will be resurfaced from June 9 to June 11. Residents should move vehicles to Lot A by 8 a.m. on those days. Replacement parking passes are available at the leasing office.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Team offsite agenda: Arrive by 9:30 a.m. on Thursday. Lunch is provided, so let Carmen know about allergies by Monday. Each team lead will present a three-slide update during the afternoon session.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Volunteer fire company minutes: Chief Dawson will schedule the annual hose test for April 14. Members must renew their training certificates before the end of the year. Dues are payable to Treasurer Hale by March 31.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Product launch checklist: Legal to approve the press release by Wednesday. Marketing will finalize the landing page copy by Thursday. Support staff should attend the Friday briefing in conference room C.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Church council minutes: The fellowship dinner is moved to the second Sunday of the month. Deacon Brooks will arrange chairs and tables. Please bring your favorite dish and list it on the sign-up sheet in the narthex.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Accounts payable reminder: Vendor invoices submitted after the 25th will be processed the following month. Please include the purchase order number on every invoice. Contact ap@maplecreek.example for payment status.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Soccer league notice: Practices for the under-12 team move to Field 4 starting next week. Coach Ruiz asks that all players bring shin guards. Game schedules will be posted on the club website on Friday.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Facilities memo: The loading dock will be closed for resurfacing from August 14 to 16. Deliveries should be rerouted to Gate 2. Please inform your vendors by August 10.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Book club minutes: The next title is Crossing the Hill, with discussion on October 3. Hannah will bring extra copies to the library. Members who cannot attend should send their thoughts to hannah.bell@readerscircle.example.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Operations update: The night shift lead will verify backup generator fuel levels each Sunday. Maintenance logs must be signed and filed in binder 2. Report any alarm faults to Victor at extension 1187.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Client onboarding email: Please send your signed agreement and two tax forms by March 15. Our account manager, Leila Haddad, will schedule the kickoff call. Access credentials will arrive by separate mail.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Youth orchestra notes: Parents should purchase the new concert uniforms from Harper's Formalwear by May 1. Rehearsals run every Wednesday from 5 to 7 p.m. Conductor Ellis will email the revised seating chart next week.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Cafeteria policy update: Staff must wash hands before handling food prep equipment. Temperature logs are due at the end of each shift. Training refreshers are scheduled for the second week of February.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Marathon committee minutes: Route marking will be completed by Sunday, April 27. Volunteers should check in at the north tent at 6 a.m. Water station captains will receive their supply list from Greg Owens.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Department reorganization memo: Effective July 1, the logistics team will report to Michael Chen. Please update your org charts by June 20. Direct questions to HR at hr@ridgeline.example.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Pool maintenance notice: The pool will close on Monday for chemical balancing. Reopening is expected Wednesday at 10 a.m. Season pass holders will receive a credit by email within two weeks.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Grant committee notes: Applications must be submitted through the portal by February 28. Each applicant needs two letters of support. Rebecca will host a Q&A webinar on February 6 at noon.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Tenant meeting summary: The building manager will replace the lobby lights by the end of the month. Residents should report broken mailbox locks to the office. Quiet hours remain 10 p.m. to 7 a.m.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Engineering handoff note: Yusuf is moving to the platform team on Monday. Please transfer open tickets in the tracker to Lara by Friday. Documentation for the payments module is in the wiki under Billing.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Community clinic notice: Flu shot clinics run on Saturdays in October from 9 a.m. to noon. Appointments can be booked at 555-0167. Bring your insurance card to the front desk.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Retail store meeting notes: Shift leads must complete inventory counts for aisles 5 through 9 by Thursday. Returns over $200 require manager approval. Schedule swap requests are due to Nadia by Sunday.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Scholarship committee memo: Reviewers should score all submissions by March 10. Scores are entered in the shared spreadsheet, column F. The committee will meet on March 14 at 2 p.m. in Room 301.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Storm preparation notice: Residents should clear gutters and secure outdoor furniture before Friday. The city will open a sandbag station at Fire Station 2. Emergency contact cards are available at the community center.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Software migration plan: Week one covers database backups, handled by Imani. Week two is application testing, led by Felix. Cutover is scheduled for the first weekend of December, with rollback steps documented in appendix B.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Food bank volunteer update: Shifts on Tuesdays now start at 8 a.m. Please wear closed-toe shoes in the warehouse. Donation drop-off hours are Monday through Friday, 9 to 4.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Sales kickoff notes: Reps should complete the product certification by March 30. Regional leads will share top accounts on Monday. Travel bookings must go through the portal by February 20.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "HOA reminder: Exterior paint color approval forms are due to the board by April 30. Submit them to the mailbox outside the clubhouse. Board member Ada Keller will review requests at the May meeting.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Laboratory safety reminder: Chemical waste containers must be labeled and dated before pickup. Hazardous waste pickup is on the first Monday of each month. Email Ruth at ruth.kaplan@sciencehall.example to schedule a special pickup.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Holiday schedule memo: The office will close at noon on December 24 and remain closed December 25 and 26. Essential staff should coordinate coverage with their managers by December 1. Happy holidays from the people team.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Museum volunteer notes: Docents should review the new exhibit script before opening day on May 5. Name tags are available at the coat check. Please report attendance changes to Ingrid by Friday afternoon.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Contractor kickoff notice: The electrical crew arrives Monday at 7 a.m. Please clear the basement storage area by Sunday night. Site supervisor Gabe Torres can be reached at 555-0175.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "City council minutes excerpt: Councilmember Price will present the parks budget at the June 11 session. Public comment forms must be submitted before the meeting begins. Agenda packets are posted on the city website.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Shipping department update: Carriers must confirm pickup times by 2 p.m. daily. Damaged cartons should be photographed and logged in the incident sheet. Questions to dispatch at dispatch@cargoline.example.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Summer camp parent letter: Campers should bring sunscreen and a labeled water bottle. Pickup is at the east gate at 4 p.m. Permission slips for the lake trip are due June 15 to Counselor Ben Adair.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Nonprofit board action list: Secretary to file the annual report with the state by September 30. Treasurer to schedule the audit firm interview. Fundraising committee to draft the donor letter by next Tuesday.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Dental office notice: Patients with appointments on Friday should arrive ten minutes early to complete updated intake forms. Our new billing contact is Sarah at 555-0120. Closed on the Monday of the holiday week.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Fleet maintenance memo: Drivers must complete pre-trip inspections using the paper checklist in each cab. Oil changes for trucks 14 through 19 are scheduled for the week of June 2. Report defects to Raymond at ext. 3305.",
+    "category": "document_note",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Great blender for smoothies. Just make sure you rinse the blade assembly right after use, or the residue dries and gets hard to clean. Otherwise it's quiet and powerful for the price.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Ordered on March 3 and the package arrived on March 7. The box was slightly dented, but the item inside was fine. Would buy from this seller again.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Hi team, I'm reassigning this ticket to Maria Lopez in billing since the invoice question falls under her queue. She'll reach out within one business day at mlopez@brightlane.example.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The hiking boots fit true to size. I'd recommend breaking them in on short walks before going on a longer trail, because the heel rubbed a little on my first outing.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Please upload the final version of the Q3 budget to the shared folder by Friday at 5 PM. Add your department's totals in the yellow cells only so the formulas don't break.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Pro tip for anyone setting this up: read the quick start guide before plugging in the router. It saves about twenty minutes of guessing which port is the WAN port.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Customer reported that the order confirmation email went to spam. Asked them to add orders@cedarhaven.example to their contacts. Ticket closed after they confirmed receipt.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Comment on the draft: the second paragraph repeats the point from the introduction. Consider cutting it down to one sentence, then move the data table up so readers see it sooner.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "These headphones sound great with podcasts but the bass is a bit light for hip hop. If that matters to you, try adjusting the EQ in the companion app first.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Dear Mr. Okafor, your library card renewal is due on June 14. You can renew online at the city library website or by visiting the front desk during opening hours.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Cannot log in after the update. I cleared my browser cache and restarted, but the error still shows. Could someone walk me through resetting the password? My username is jchen_22.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Left a review after two weeks of use. The coffee maker brews quickly, though you should descale it monthly with vinegar and water to keep the flow steady.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Reminder for the facilities team: the storage room key is now in the lockbox by the loading dock. Use code 4471 and return the key to the same box when you're done.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Please review the attached slides before Thursday's meeting. Leave your comments in the margin, and tag Priya Nandakumar if you have questions about the vendor section.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The kids love this puzzle, and it's sturdy enough to survive being dropped on the floor. Just sort the edge pieces first, because that made the whole thing go much faster.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Ticket update: the replacement part shipped via Northwind Freight under tracking number NW558203141. Expect delivery between Tuesday and Thursday, and call 555-0142 if it's not there by Friday.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Good value for a basic desk lamp. The cord is a little short, so position the lamp near the outlet. The brightness settings are easy to use with one hand.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Hi all, the conference room B projector has been fixed. If you still see a blank screen, toggle the input button on the remote from HDMI 1 to HDMI 2.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "I followed the recipe exactly and the bread came out dense. Next time I'll let the dough rise for a full two hours in a warmer spot, which seemed to be the problem.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Please sign the attached onboarding form and return it to hr@valleyridge.example by the end of the week. Keep a copy for your own records.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The sunscreen is lightweight and doesn't leave a greasy finish. Apply it about fifteen minutes before going outside so it has time to absorb fully.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Shared file note: this spreadsheet is the master copy for April. Please make your edits in a duplicate tab and let Tomas Reyes know when you're ready to merge them.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Got the tent set up in about twenty minutes, which is good for a first try. Read the pole diagram carefully because two of the sleeves look almost identical.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Customer asked how to change their delivery address. Walked them through the account settings page under Shipping, then confirmed the new address was saved before closing the chat thread.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Solid mechanical keyboard with a satisfying click. If the keys feel too loud for an office, swap in the lighter switches included in the box before you start typing all day.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Please add your timesheet for the week of May 12 by Monday noon. Projects are listed under the Client Codes tab, so use CX-204 for the Harbor Project work.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The guide is well organized and the photos are clear. I'd suggest starting with chapter two, since the tools listed there make the rest of the projects much easier to follow.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Thanks for reporting the typo on the pricing page. We corrected it to read 12.99 instead of 129.9. Let us know at support@pinecrestsoftware.example if you spot anything else.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Bought this for my father, who has trouble opening small jars. The grip is wide and comfortable, and the rubber ring on the base keeps it from slipping on the counter.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Before you run the cleanup script, make a backup of the reports folder on the network drive. The script deletes files older than 90 days, so double check the path first.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Five stars for the customer service. When my tracking number didn't update, the rep called me back within an hour and sorted it out, which I really appreciated.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Comment on the proposal: please confirm the start date with the client before we send the revised timeline. Mention that the schedule shifts by one week due to the permit review.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The water bottle keeps drinks cold for most of the day. Hand wash it instead of putting it in the dishwasher, because the heat can warp the plastic lid over time.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Hello, I'm writing about my account number 40917826. I'd like to switch from monthly to annual billing. Please let me know how the prorated charge will be calculated.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Nice little travel pillow. Inflate it only to the level that supports your neck, because overinflating makes it feel stiff. The cover zips off for washing in cold water.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Action item from today's standup: Dev team, please update the README with the new environment variables by Wednesday. Ask Kwame Asante to review the pull request once it's ready.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The paint covers in two coats, though the first one looks streaky. Let each coat dry for at least four hours, and use painter's tape along the trim for clean edges.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Ticket resolved. The printer was offline because the network cable came loose behind the cabinet. Reconnected it, reran the test page, and the queue is clearing normally now.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Please keep the side door closed after 6 PM for the building's security schedule. If you need access later, call the front desk at extension 233 and they'll buzz you in.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "I bought these running socks for long training days. They stay in place well and dry quickly, but the sizing runs a bit large, so consider ordering one size down.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Tip for new members of the book club: our next title is available at the library in both print and ebook formats. Please finish chapters one through six before the June 9 meeting.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The app is easy to navigate, though the notifications can be overwhelming. Head to the settings menu and turn off the daily summary if you only want alerts for important messages.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Shared doc comment: the figures in table three don't match the appendix. Could whoever updated the sales numbers last week check the totals against the February export and confirm?",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Arrived with a small scratch on the lid, but the seller sent a replacement within two days without any fuss. The stand is sturdy and holds the tablet at a comfortable angle.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Hi Ms. Duarte, your appointment at Riverside Dental has been moved to Tuesday, October 8 at 10:30 AM. Please arrive ten minutes early to complete the updated medical history form.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Quick note on the garden shed kit: the instructions list twelve screws, but the bag has fourteen. The extras are spares, so there's no need to hunt for missing parts.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Installed the new thermostat last weekend. The wiring diagram on page four matched my system, but I still recommend turning off the breaker before removing the old unit.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Please remember to label your lab samples with the date, initials, and sample ID before placing them in the freezer. Log each entry in the shared inventory sheet on the lab drive.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Great storybook with bright illustrations. My daughter asks for it every night. The pages are thick enough to handle a lot of enthusiastic page turning.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Customer requested a refund for a duplicate charge on invoice INV-70342. Confirmed the duplicate with finance and submitted the refund to the original card, which should appear in five to seven days.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The cutting board is nice and heavy, with a good juice groove. Oil it with food-safe mineral oil every few weeks to keep the wood from drying out and cracking.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Reminder: the office kitchen will be closed for cleaning on Saturday, September 21. Please take any perishable food home on Friday so the fridge can be emptied.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "I had a small issue with the zipper on arrival, but a quick call to Harlow Outdoor Supply got a replacement sent out the same day. Their team was friendly and fast.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "For the grant application, attach the signed budget justification as a PDF and name it with your last name and the project code. Submit everything through the portal by 4 PM Eastern on Monday.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "The mattress topper softened up nicely after about a week. Fluff it by hand each morning at first, and it will keep its shape better over the long run.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "Comment on the design file: the logo looks great at full size, but the footer text is hard to read on the dark background. Try increasing the contrast to at least 4.5 to 1.",
+    "category": "review_or_record",
+    "generator": "anthropic/claude-haiku-5-5"
+  }
+]
