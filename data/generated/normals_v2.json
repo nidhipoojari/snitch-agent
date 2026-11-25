@@ -1,0 +1,302 @@
+[
+  {
+    "text": "SUBJECT: Reset your Brightline Bank password|CONTENT: Hi Maria, we received a request to reset the password for your Brightline Bank online account. You can choose a new password by visiting https://login.brightlinebank.example/reset?token=7f3a91 within the next 60 minutes. If you did not ask for this, ignore this email and your password will stay the same.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Password reset request|CONTENT: Hello Tom, click the link below to set a new password for your Cloudyard account: https://accounts.cloudyard.example/reset/QW82-LLP. The link expires in 24 hours. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your password reset link|CONTENT: Hi Priya, someone asked to reset your Greenleaf Pharmacy portal password. Use this link to create a new one: https://portal.greenleafrx.example/reset?id=884210. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Reset your Northwind Gym password|CONTENT: Hi Dan, you can reset your Northwind Gym member password at https://members.northwindgym.example/password/new?code=R5T2K9. If you did not make this request, ignore this email and no changes will be made to your account.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Password change requested|CONTENT: Hello Aisha, we received a request to change the password on your Parkview Library account. To continue, open https://catalog.parkviewlib.example/reset/39120 and choose a new password. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Action needed: reset your password|CONTENT: Hi Jonas, your password for the Kettle & Co. ordering site is due for a reset as part of our security update. Please visit https://shop.kettleandco.example/reset?t=aa19f0 to set a new one. The link is valid for 48 hours. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Reset password for your Ridgeway Telecom account|CONTENT: Hi Lena, a password reset was requested for your Ridgeway Telecom account ending in 4471. You can set a new password here: https://my.ridgewaytel.example/reset/x8Q1mZ. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your password reset|CONTENT: Hello Omar, this email confirms that you asked to reset your Fieldnote Notes app password. Tap or click https://app.fieldnote.example/reset?code=60417 to continue. The link works once and expires in 30 minutes. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Password reset for your Sunrise Credit Union login|CONTENT: Hi Grace, we received a request to reset your online banking password at Sunrise Credit Union. Please go to https://online.sunrisecu.example/reset/ZP7731 and follow the steps. If you did not ask for this, ignore this email. Your current password will continue to work until you change it. Thank you for banking with us.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Reset your BlueHarbor Learning password|CONTENT: Hi Mei, a password reset was requested for your BlueHarbor Learning student account. Use this link to set a new password: https://learn.blueharbor.example/reset?u=mei.l&k=3380. The link expires in 2 hours. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Password reset request for your Maplewood Insurance account|CONTENT: Hello Carlos, we got a request to reset the password for your Maplewood Insurance policyholder account. If that was you, visit https://secure.maplewoodins.example/reset/845-KQ and choose a new password. Our team will never ask for your password by phone or email. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Reset your password|CONTENT: Hi Nina, you requested a password reset for your Harbor Lane Coffee rewards account. Click here to create a new password: https://rewards.harborlanecoffee.example/reset?r=0092. The link lasts 24 hours. If you did not ask for this, ignore this email.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Password reset link inside|CONTENT: Hi Ben, here is the link to reset your Tallyshop Inventory password: https://app.tallyshop.example/reset/81c4-b2. It is valid until 6 PM today. If you did not request this change, you can ignore this email and your password will not be updated.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Reset your Westfield Utilities online account password|CONTENT: Dear Rafael, we received a request to reset the password for your Westfield Utilities online account. To set a new password, please visit https://myaccount.westfieldutil.example/reset?ref=552917 within 60 minutes. If you did not ask for this, ignore this email. For questions, call our customer line at 555-0142 during business hours.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Password reset for your Lumen Print Co. account|CONTENT: Hi Sofia, you asked to reset the password for your Lumen Print Co. customer account. Use the link below to choose a new password: https://orders.lumenprint.example/reset/gh77-plm. The link expires in 12 hours. If you did not ask for this, ignore this email. We are happy to help with any other questions you have.",
+    "category": "password_reset",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: New sign-in to your Brightline account|CONTENT: Hi Maya, we noticed a new sign-in to your Brightline account on March 3, 2025 at 9:14 AM. Device: Windows laptop (Chrome 122). Location: Portland, OR, USA. If this was you, you can ignore this message. If not, review your recent activity at https://account.brightline-mail.example/security and change your password right away.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Unusual login attempt blocked|CONTENT: Hello Daniel, we stopped a sign-in attempt to your Northwind Bank profile from an unrecognized iPhone in Lagos, Nigeria at 2:47 AM UTC today. No changes were made to your account. To see every session that is currently active, visit https://nwbank.example/sessions. Consider updating your password if you do not recognize this activity.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: A new device signed in|CONTENT: Hi Priya, your Cedar Cloud Storage account was accessed from a new Android tablet in Toronto, Canada on June 18, 2024 at 6:02 PM EDT. Review the device list in your settings at https://cedarcloud.example/account/devices.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Security notice: sign-in from new location|CONTENT: Dear Tomasz, your Greenfield Payroll login was used from Denver, Colorado at 8:30 AM on October 9, 2025 on a Mac running Safari. If this was you, no action is needed. If you think someone else used your account, change your password at https://greenfieldpay.example/password and then check your activity log.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm recent sign-in to Oakline Mail|CONTENT: Hi Ana, a sign-in to your Oakline Mail account occurred on April 22, 2025 at 11:45 AM from a Samsung phone in Madrid, Spain. Please confirm this was you on our activity page at https://oakline.example/activity. Thank you for helping keep your account safe.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Login from a new browser|CONTENT: Hello Kevin, your Summit Learning account was signed in from Firefox on Ubuntu in Austin, Texas at 4:18 PM CST on February 11, 2025. You can review all recent sign-ins at https://summitlearn.example/security. Thanks, the Summit Learning team.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Unrecognized sign-in detected|CONTENT: Hi Rosa, we detected a sign-in to your Pinecrest Health portal from a Windows desktop in Phoenix, Arizona on August 5, 2024 at 7:55 AM MST. If you did not sign in, please change your password and review recent account activity at https://pinecresthealth.example/account/security.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: New sign-in on your Bluebird Travel account|CONTENT: Dear Yuki, a new sign-in to your Bluebird Travel account took place on December 1, 2025 at 3:12 PM from an iPad in Osaka, Japan. Check your login history at https://bluebirdtravel.example/login-history. If you are not sure who signed in, update your password there.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your account was accessed from a new device|CONTENT: Hello Omar, your Ridgeway Insurance account was accessed on May 14, 2025 at 10:03 AM from a Linux laptop in Chicago, Illinois. This message is to keep you informed. You can see active devices or change your password at https://ridgewayins.example/manage.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Sign-in alert for your Kestrel Workspace|CONTENT: Hi Lena, a new sign-in was recorded for your Kestrel Workspace account at 1:26 PM on July 30, 2024 from a MacBook in Berlin, Germany. If this was you, nothing else is needed. To review activity or sign out other sessions, go to https://kestrel.example/sessions.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Unusual sign-in activity|CONTENT: Dear Ben, we noticed an unusual sign-in to your Harbor Credit Union online banking from an Android phone in Halifax, Nova Scotia on January 27, 2025 at 9:41 PM AST. We recommend reviewing your account activity at https://harborcu.example/activity and changing your password if needed. Our fraud team is available at 1-800-555-0148.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: New login to your Juniper Shop account|CONTENT: Hi Carla, a new login to your Juniper Shop account was recorded on November 16, 2024 at 5:50 PM from a Windows PC in Seattle, Washington. Your order history and saved cards are unchanged. To review your login activity, visit https://junipershop.example/account/logins.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Sign-in from new device on Tidewater Email|CONTENT: Hello Grace, your Tidewater Email account was signed in on March 20, 2025 at 12:07 PM from an Outlook app on Windows in Sydney, Australia. Please review this at https://tidewatermail.example/security. Changing your password takes less than a minute from the same page.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: We noticed a sign-in to your Quarry Books account|CONTENT: Hi Sam, a sign-in to your Quarry Books account occurred on September 2, 2025 at 8:19 AM from a Chromebook in Dublin, Ireland. We sent this so you always know when your account is used. If you did not sign in, go to https://quarrybooks.example/password to reset your password and review recent activity.\n\nThanks for reading with us,\nThe Quarry Books Team",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: New sign-in to your Atlas Fitness app|CONTENT: Hi Nora, your Atlas Fitness account was signed in on June 7, 2025 at 6:33 AM from an iPhone in Boston, Massachusetts. If this was you, you can ignore this email. If not, visit https://atlasfit.example/account/security to review sessions and change your password.",
+    "category": "login_alert",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your verification code for Brightline Bank|CONTENT: Hi Maria, we received a request to sign in to your Brightline Bank account. Your one-time verification code is 482913. This code expires in 10 minutes. For your security, do not share this code with anyone, including people claiming to be from our support team.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Sign-in code for your Northwind Cloud account|CONTENT: Hello Dev, use the code 705146 to finish signing in to Northwind Cloud. The code is valid for 5 minutes. If you did not try to sign in, you can ignore this message. Never forward this code to another person.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your new email address|CONTENT: Hi Priya, please confirm that you want to link priya.n@example.org to your Halcyon Travel profile. Enter this 6-digit code on the confirmation page: 219384. It will expire in 15 minutes. Please don't share this code with anyone.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your login code|CONTENT: Your login code is 638271. It is valid for 8 minutes. Do not share this code.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Verification code for Greenfield Utilities|CONTENT: Hello Tom, you asked to reset the password on your Greenfield Utilities portal. Your verification code is 954072. The code expires in 12 minutes, so enter it soon. Keep this code to yourself and do not share it with anyone, even if they say they work for Greenfield.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: One-time code for your Lumen Library card|CONTENT: Hi Sam, your one-time code to access your Lumen Library account is 127865. This code stays valid for 10 minutes after it was sent. We will never call you to ask for it. Please don't share it with anyone.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Two-step verification request|CONTENT: Dear Amara Osei, a sign-in attempt was made on your Parkside Insurance account from a new device in Lisbon. If this was you, enter code 380615 within 7 minutes. If it was not you, change your password right away. Do not share this code with anyone.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your code for Cobalt Payroll|CONTENT: Hi Javier, here is your code for Cobalt Payroll: 571029. It is valid for 6 minutes. Please keep this code private and do not reply to this email.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Access code for your Maple Health portal|CONTENT: Hello Rachel, to complete your sign-in to the Maple Health patient portal, enter the 6-digit code 862450. The code expires in 10 minutes. Please do not share this code with friends, family, or anyone else. Maple Health staff will never ask for it.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Verify your device for Orion Mail|CONTENT: Hi Kenji, we noticed you added a new device to your Orion Mail account. To confirm it is you, type in the code 146802 on the verification screen. This code is valid for 10 minutes. Please do not share it with anyone who asks for it.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your Redwood Market verification code|CONTENT: Thanks for signing in, Olu. Your verification code is 693317. It will expire in 5 minutes. For your protection, do not share this code. If you did not request it, you can safely ignore this email.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your withdrawal on Silverline Brokerage|CONTENT: Hello Grace, you requested a withdrawal of $1,250.00 from your Silverline Brokerage account. To approve it, enter the code 417592 in the app. The code is valid for 3 minutes. Do not share this code with anyone, including people who say they are from Silverline.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Code to finish account setup|CONTENT: Welcome to Pinecrest Learning, Ellen! To finish setting up your account, enter the verification code 508734 on the setup page. This code is valid for 15 minutes. Please keep it to yourself and do not forward this email.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Sign-in verification for Bluewater Shipping|CONTENT: Hi Carlos, we received a sign-in request for your Bluewater Shipping dashboard from Chrome on Windows. Your one-time code is 290486. It expires in 10 minutes. Please do not share this code with anyone. If you didn't request this, contact our team at help@bluewater-ship.example.com.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Your verification code for Ember Energy|CONTENT: Hello Nadia, your Ember Energy verification code is 735129. The code is valid for 10 minutes and can only be used once. Please don't share this code with anyone. Ember Energy will never ask you for it by phone or text. Thank you for choosing Ember Energy.",
+    "category": "verification_code",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Please verify your email address|CONTENT: Hi Maria, thanks for signing up for Brightleaf Coffee Subscriptions. To finish setting up your account, please confirm your email address by clicking this link: https://brightleafcoffee.example/verify?token=8f3a21c9. The link expires in 48 hours. If you did not create this account, you can ignore this message.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your account, Devon|CONTENT: Welcome to Harbor Point Library! Your library card application is almost complete. Please confirm your email so we can send you due date reminders: https://harborpointlib.example/confirm/tk-204917. Once confirmed, you can start borrowing items right away.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Action needed: verify your email|CONTENT: Hello Priya, we noticed you recently created a Fernwood Bank online profile. For your security, we need you to verify this email address. Click here to continue: https://fernwoodbank.example/verify-email?id=55210. Thank you for banking with us.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your registration for the Spring 5K|CONTENT: Hi Tom, you're registered for the Riverside Spring 5K on April 12. Please confirm your email address so we can send race-day details. Confirm here: https://riversidefun.example/confirm?reg=5K-7731. Bib pickup opens at 7:30 AM at the community center.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Verify your email to activate your Lumen Cloud account|CONTENT: Thanks for creating a Lumen Cloud workspace. Please verify your email address to activate your account. Verification link: https://lumencloud.example/activate/a91c-22e0. If the link has expired, you can request a new one from the sign-in page.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: One last step, Kenji|CONTENT: Your Oakridge Pet Clinic patient portal is ready. Please confirm your email address so we can share appointment reminders and lab results. Confirm now: https://oakridgepets.example/confirm?case=40183. Questions? Call our front desk at 555-0142.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your email for Greenway Transit|CONTENT: Thank you for joining Greenway Transit's rewards program. To activate your points balance, please confirm your email address at https://greenwaytransit.example/confirm/rw-8820. Points earned on trips will appear once your account is verified.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Verify your address to finish your order|CONTENT: Hi Lena, your order #B-30812 from Tidewater Books is almost ready to ship. We need to verify your email address before we send tracking updates. Please use this link: https://tidewaterbooks.example/verify?order=B-30812. Thanks for shopping with us.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your account at Summit Learning|CONTENT: Welcome to Summit Learning! You're one step away from accessing your online courses. Please confirm your email by visiting https://summitlearning.example/confirm?user=4471. Once confirmed, you can log in and choose your first class.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Please verify your email address|CONTENT: Hello Omar, we received a request to create a Cedar Hill Utilities account for your address on Maple Street. To confirm it's really you, please verify your email at https://cedarhillutil.example/verify/90ab41. If you didn't request this, no action is needed.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your email for the Parkside Gardening Club|CONTENT: Hi Ruth, thanks for signing up for the Parkside Gardening Club newsletter and plot waitlist. Please confirm your email address here: https://parksidegardens.example/confirm?member=212. The first planting workshop is on May 3 at 10 AM.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Verify your email to complete setup|CONTENT: Thanks for installing the Quillpad note-taking app. To sync your notes across devices, please verify your email address. Tap or click this link to verify: https://quillpad.example/verify?code=QP-6617. The link is valid for 24 hours.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your Bluefin Credit Union profile|CONTENT: Dear Sam, your online banking profile at Bluefin Credit Union has been created. Please confirm your email address to receive account alerts. Confirm here: https://bluefincu.example/confirm-email?ref=CU-55902. For your protection, we will never ask for your password by email.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Verify your email for the Ashford Theater mailing list|CONTENT: Thanks for joining the Ashford Theater mailing list! Please confirm your email address to start receiving show announcements and ticket presale access. Confirm here: https://ashfordtheater.example/confirm/ml-3309. Our next production opens on June 8.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  },
+  {
+    "text": "SUBJECT: Confirm your account, Grace|CONTENT: Welcome to the Northgate Community Forum. Before you can post, we need to confirm your email address. Please click https://northgateforum.example/verify?uid=7720 to complete verification. Please remember to read the community guidelines after signing in.",
+    "category": "verify_email",
+    "generator": "anthropic/claude-haiku-5-5"
+  }
+]

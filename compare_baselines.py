@@ -43,6 +43,9 @@ HOW TO RUN (Colab, with the GPU on; files in your IS755_Project folder)
     pip install transformers accelerate sentencepiece protobuf scikit-learn
     python compare_baselines.py --data master.jsonl --guard our_guard
 
+Guard v2: reuse the saved ProtectAI / Prompt Guard 2 answers, run only TF-IDF and the new guard:
+    python compare_baselines.py --data data/master.jsonl --guard our_guard_v2 --out comparison_v2 --baselines-from comparison/comparison_predictions.csv
+
 Quick check that it runs (60 test texts):
     python compare_baselines.py --data master.jsonl --guard our_guard --limit 60
 
@@ -176,6 +179,9 @@ def main():
     ap.add_argument("--protectai-model", default=DETECTORS["protectai"][1])
     ap.add_argument("--promptguard-model", default=DETECTORS["promptguard"][1])
     ap.add_argument("--limit", type=int, default=None, help="only this many test texts (quick check)")
+    ap.add_argument("--baselines-from", default=None,
+                    help="reuse ProtectAI / Prompt Guard 2 answers from an earlier comparison_predictions.csv "
+                         "instead of running them again (they are ready-made, so they do not change)")
     args = ap.parse_args()
 
     df = pd.read_json(args.data, lines=True)
@@ -190,8 +196,25 @@ def main():
     preds = test[["id", "source", "content_type", "label"]].copy()
     runs = []                                            # (key, display name)
 
+    saved = None
+    if args.baselines_from:
+        saved = pd.read_csv(args.baselines_from).set_index("id")
+        missing = set(preds.id) - set(saved.index)
+        if missing:
+            raise SystemExit(f"--baselines-from has no answers for {len(missing)} test texts, "
+                             f"e.g. {sorted(missing)[:3]}; use the same --data as that run")
+        if (saved.loc[preds.id, "label"].to_numpy() != labels).any():
+            raise SystemExit("--baselines-from labels do not match this test set")
+
     for key, model_arg in (("protectai", args.protectai_model), ("promptguard", args.promptguard_model)):
         if key in args.skip:
+            continue
+        if saved is not None and f"{key}_pred" in saved.columns:
+            name = DETECTORS[key][0]
+            preds[f"{key}_score"] = saved.loc[preds.id, f"{key}_score"].to_numpy()
+            preds[f"{key}_pred"] = saved.loc[preds.id, f"{key}_pred"].to_numpy()
+            runs.append((key, name))
+            print(f"Reusing {name} answers from {args.baselines_from}\n")
             continue
         name = DETECTORS[key][0]
         print(f"Running {name} ({model_arg}) ...")

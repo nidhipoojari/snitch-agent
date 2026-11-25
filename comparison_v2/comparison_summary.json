@@ -1,0 +1,257 @@
+{
+  "n_test": 736,
+  "threshold": 0.5,
+  "table": [
+    {
+      "detector": "ProtectAI DeBERTa v2",
+      "precision": 0.7052,
+      "recall": 0.4863,
+      "f1": 0.5756,
+      "false_alarm_rate": 0.1989,
+      "accuracy": 0.6454,
+      "attacks_caught": "177/364",
+      "false_alarms": "74/372"
+    },
+    {
+      "detector": "Prompt Guard 2 (86M)",
+      "precision": 0.9868,
+      "recall": 0.206,
+      "f1": 0.3409,
+      "false_alarm_rate": 0.0027,
+      "accuracy": 0.606,
+      "attacks_caught": "75/364",
+      "false_alarms": "1/372"
+    },
+    {
+      "detector": "TF-IDF + logistic regression",
+      "precision": 0.8754,
+      "recall": 0.7335,
+      "f1": 0.7982,
+      "false_alarm_rate": 0.1022,
+      "accuracy": 0.8166,
+      "attacks_caught": "267/364",
+      "false_alarms": "38/372"
+    },
+    {
+      "detector": "Our guard (span-level)",
+      "precision": 0.9474,
+      "recall": 0.989,
+      "f1": 0.9677,
+      "false_alarm_rate": 0.0538,
+      "accuracy": 0.9674,
+      "attacks_caught": "360/364",
+      "false_alarms": "20/372"
+    }
+  ],
+  "by_source": [
+    {
+      "detector": "ProtectAI DeBERTa v2",
+      "source": "bipia",
+      "n": 292,
+      "precision": 0.642,
+      "recall": 0.327,
+      "f1": 0.4333,
+      "false_alarm_rate": 0.218,
+      "accuracy": 0.5342,
+      "attacks_caught": "52/159",
+      "false_alarms": "29/133"
+    },
+    {
+      "detector": "ProtectAI DeBERTa v2",
+      "source": "enron",
+      "n": 89,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_alarm_rate": 0.0112,
+      "accuracy": 0.9888,
+      "attacks_caught": "0/0",
+      "false_alarms": "1/89"
+    },
+    {
+      "detector": "ProtectAI DeBERTa v2",
+      "source": "injecagent",
+      "n": 232,
+      "precision": 0.7067,
+      "recall": 0.8154,
+      "f1": 0.7571,
+      "false_alarm_rate": 0.4314,
+      "accuracy": 0.7069,
+      "attacks_caught": "106/130",
+      "false_alarms": "44/102"
+    },
+    {
+      "detector": "ProtectAI DeBERTa v2",
+      "source": "llm_generated",
+      "n": 123,
+      "precision": 1.0,
+      "recall": 0.2533,
+      "f1": 0.4043,
+      "false_alarm_rate": 0.0,
+      "accuracy": 0.5447,
+      "attacks_caught": "19/75",
+      "false_alarms": "0/48"
+    },
+    {
+      "detector": "Prompt Guard 2 (86M)",
+      "source": "bipia",
+      "n": 292,
+      "precision": 1.0,
+      "recall": 0.0063,
+      "f1": 0.0125,
+      "false_alarm_rate": 0.0,
+      "accuracy": 0.4589,
+      "attacks_caught": "1/159",
+      "false_alarms": "0/133"
+    },
+    {
+      "detector": "Prompt Guard 2 (86M)",
+      "source": "enron",
+      "n": 89,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_alarm_rate": 0.0,
+      "accuracy": 1.0,
+      "attacks_caught": "0/0",
+      "false_alarms": "0/89"
+    },
+    {
+      "detector": "Prompt Guard 2 (86M)",
+      "source": "injecagent",
+      "n": 232,
+      "precision": 0.9859,
+      "recall": 0.5385,
+      "f1": 0.6965,
+      "false_alarm_rate": 0.0098,
+      "accuracy": 0.7371,
+      "attacks_caught": "70/130",
+      "false_alarms": "1/102"
+    },
+    {
+      "detector": "Prompt Guard 2 (86M)",
+      "source": "llm_generated",
+      "n": 123,
+      "precision": 1.0,
+      "recall": 0.0533,
+      "f1": 0.1013,
+      "false_alarm_rate": 0.0,
+      "accuracy": 0.4228,
+      "attacks_caught": "4/75",
+      "false_alarms": "0/48"
+    },
+    {
+      "detector": "TF-IDF + logistic regression",
+      "source": "bipia",
+      "n": 292,
+      "precision": 0.7737,
+      "recall": 0.6667,
+      "f1": 0.7162,
+      "false_alarm_rate": 0.2331,
+      "accuracy": 0.7123,
+      "attacks_caught": "106/159",
+      "false_alarms": "31/133"
+    },
+    {
+      "detector": "TF-IDF + logistic regression",
+      "source": "enron",
+      "n": 89,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_alarm_rate": 0.0112,
+      "accuracy": 0.9888,
+      "attacks_caught": "0/0",
+      "false_alarms": "1/89"
+    },
+    {
+      "detector": "TF-IDF + logistic regression",
+      "source": "injecagent",
+      "n": 232,
+      "precision": 0.9508,
+      "recall": 0.8923,
+      "f1": 0.9206,
+      "false_alarm_rate": 0.0588,
+      "accuracy": 0.9138,
+      "attacks_caught": "116/130",
+      "false_alarms": "6/102"
+    },
+    {
+      "detector": "TF-IDF + logistic regression",
+      "source": "llm_generated",
+      "n": 123,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "false_alarm_rate": 0.0,
+      "accuracy": 0.7561,
+      "attacks_caught": "45/75",
+      "false_alarms": "0/48"
+    },
+    {
+      "detector": "Our guard (span-level)",
+      "source": "bipia",
+      "n": 292,
+      "precision": 0.9873,
+      "recall": 0.9811,
+      "f1": 0.9842,
+      "false_alarm_rate": 0.015,
+      "accuracy": 0.9829,
+      "attacks_caught": "156/159",
+      "false_alarms": "2/133"
+    },
+    {
+      "detector": "Our guard (span-level)",
+      "source": "enron",
+      "n": 89,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_alarm_rate": 0.0112,
+      "accuracy": 0.9888,
+      "attacks_caught": "0/0",
+      "false_alarms": "1/89"
+    },
+    {
+      "detector": "Our guard (span-level)",
+      "source": "injecagent",
+      "n": 232,
+      "precision": 0.8844,
+      "recall": 1.0,
+      "f1": 0.9386,
+      "false_alarm_rate": 0.1667,
+      "accuracy": 0.9267,
+      "attacks_caught": "130/130",
+      "false_alarms": "17/102"
+    },
+    {
+      "detector": "Our guard (span-level)",
+      "source": "llm_generated",
+      "n": 123,
+      "precision": 1.0,
+      "recall": 0.9867,
+      "f1": 0.9933,
+      "false_alarm_rate": 0.0,
+      "accuracy": 0.9919,
+      "attacks_caught": "74/75",
+      "false_alarms": "0/48"
+    }
+  ],
+  "paired_tests": {
+    "ours vs ProtectAI DeBERTa v2": {
+      "only_ours_right": 245,
+      "only_theirs_right": 8,
+      "p_value": 5.32e-62
+    },
+    "ours vs Prompt Guard 2 (86M)": {
+      "only_ours_right": 286,
+      "only_theirs_right": 20,
+      "p_value": 1.86e-61
+    },
+    "ours vs TF-IDF + logistic regression": {
+      "only_ours_right": 131,
+      "only_theirs_right": 20,
+      "p_value": 3.45e-21
+    }
+  }
+}

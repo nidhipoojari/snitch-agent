@@ -9,9 +9,11 @@ twice: once with the attack inserted, once without. Our guard reads every tool o
   False alarm   clean output: the guard marked something anyway
 
 Run:  python guard_check.py            -> guard_check.csv + summary
+      python guard_check.py --guard our_guard_v2 --out guard_check_v2.csv   (guard v2)
 Needs train_guard.py and our_guard/ next to this file, and sample_cases.json (python run_snitch.py sample).
 """
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -37,12 +39,16 @@ def tool_outputs(suite, user_task, injections):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--guard", default="our_guard", help="folder with the trained guard")
+    ap.add_argument("--out", default="guard_check.csv", help="where to save the per-output results")
+    args = ap.parse_args()
     sample = json.load(open(HERE / "sample_cases.json"))
     suite = get_suite(sample["benchmark_version"], "workspace")
     dummy = AgentPipeline([])
     dummy.name = "local"
     attack = load_attack("important_instructions", suite, dummy)
-    guard = Guard(str(HERE / "our_guard"))
+    guard = Guard(str(HERE / args.guard))
 
     rows, clean_done = [], set()
     for u, i in sample["attack_cases"]:
@@ -75,7 +81,7 @@ def main():
         clean_done.add(u)
 
     df = pd.DataFrame(rows)
-    df.to_csv(HERE / "guard_check.csv", index=False)
+    df.to_csv(HERE / args.out, index=False)
     att = df[df.has_attack]
     cl = df[df.kind == "clean"]
     print(f"Attacked tool outputs: {len(att)}   caught: {int(att.caught.sum())} ({att.caught.mean():.1%})")
